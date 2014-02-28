@@ -1,0 +1,21 @@
+Countdown Version History
+
+=================================================================================
+
+Part One:	Project Creation
+
+Start:	- 28/02/2014
+End:	- 28/02/2014
+
+---------------------------------------------------------------------------------
+
+	v0.0:	28/02/2014 - Project Birth
+
+		- 	Set up the inital GitHub repository, .gitIgnore and README.md.
+		- 	Created the Eclipse project with the initlal class Driver, the
+			purpose of which includes the main method to start the program.
+		-	The file only currently prints out placeholder text.
+
+		Aidan
+
+---------------------------------------------------------------------------------
