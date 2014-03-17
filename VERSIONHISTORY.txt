@@ -11,11 +11,18 @@ End:	- 28/02/2014
 
 	v0.0:	28/02/2014 - Project Birth
 
-		- 	Set up the inital GitHub repository, .gitIgnore and README.md.
-		- 	Created the Eclipse project with the initlal class Driver, the
+		- 	Set up the initial GitHub repository, .gitIgnore and README.md.
+		- 	Created the Eclipse project with the initial class Driver, the
 			purpose of which includes the main method to start the program.
 		-	The file only currently prints out placeholder text.
 
 		Aidan
 
 ---------------------------------------------------------------------------------
+
+	v0.1:	17/03/2014 - Countdown Class
+	
+		-	The Countdown class has been created, which is the main menu of the
+			program, which allows the user to choose from a variety of actions.
+			Currently, none of these actions are implemented, instead printing
+			out placeholder text for the meantime.
