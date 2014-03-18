@@ -1,14 +1,11 @@
 /**	
- * @author	Aidan O'Grady
- * @version	0.0
- * @since	28/02/2014
+ * @author		Aidan O'Grady
+ * @version	0.1
+ * @since		28/02/2014
  */
 public class Driver{
 	/** 
 	 * The main method to control the project.
-	 * 
-	 * While currently holding a placeholder print out, this method will be used
-	 * for the initial execution of the game.	
 	 */
 	public static void main(String[] args){
 		Countdown game = new Countdown();

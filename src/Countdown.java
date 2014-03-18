@@ -1,34 +1,59 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**	
+ * @author		Aidan O'Grady
+ * @version	0.1
+ * @since		14/03/2014
+ */
 public class Countdown {
+	
+	/** The name of the player. */
 	private String playerName;
+	/** The player's score. */
 	private int playerScore;
-	private int round;
+	/** The scanner used for managing user input. */
 	private Scanner scanner;
 	
+	/**	
+	 * Constructs a new game of Countdown.
+	 * 
+	 */
 	public Countdown(){
 		System.out.println("Welcome to Countdown!\n");
 		scanner = new Scanner(System.in);
 		playerName = getPlayerName();
 		System.out.println("Hello " + playerName + ". \n");
-		round = 0;
-		while(true)
+		while(true) //displayMenu() will keep happening until user chooses exit.
 			displayMenu();
 	}
-		
+	
+	/**
+	 * A method used to print out a continuous series "-"s as a line break.
+	 *
+	 */
 	private void lineBreak(){
 		for(int i=0; i<80; i++)
 			System.out.print("-");
 		System.out.println("\n");
 	}
 	
+	/**
+	 * Allows the user to input their name.
+	 * 
+	 * @return returns the user's input, acting as their name.
+	 * 
+	 */
 	private String getPlayerName() {
 		System.out.print("Please enter your name: ");
 		String name = scanner.nextLine();
 		return name;
 	}
 
+	/**
+	 * The game's main menu, provides the user with options to choose form.
+	 * 
+	 */
 	private void displayMenu(){
 		lineBreak();
 		System.out.println("Select an option: \n" +
@@ -66,6 +91,9 @@ public class Countdown {
 		}
 	}
 
+	/**
+	 * A menu for the "Play full game" option.
+	 */
 	private void fullGameMenu() {
 		displayMenu: while (true) {
 			lineBreak();
@@ -101,6 +129,9 @@ public class Countdown {
 		}	
 	}
 
+	/**
+	 * A menu for the "Play single round" option.
+	 */
 	private void singleRoundMenu() {
 		displayMenu: while (true) {
 			lineBreak();
@@ -140,7 +171,11 @@ public class Countdown {
 		}
 	}
 	
+	/**
+	 * Plays a new full game, or resumes a previous one.
+	 */
 	private void playFullGame(){
+		//To be implemented.
 		System.out.println("Full game selected.\n");
 		loop: while (true) {
 			lineBreak();
@@ -176,15 +211,28 @@ public class Countdown {
 
 	}
 	
+	/**
+	 * Saves the current status of the game being played.
+	 */
 	private void saveGame(){
+		//To be implemented.
 		System.out.println("Saving\n");
 	}
 	
+	/**
+	 * Resumes a previous game.
+	 */
 	private void resumeGame(){
+		//To be implemented.
 		System.out.println("Resuming\n");
 	}
 
+	/**
+	 * Starts a new single Round.
+	 * @param game The game type that the user wishes to play.
+	 */
 	private void playSingleRound(String game) {
+		//To be implemented.
 		switch(game){
 		case "Letters":
 			System.out.println("Letters round.\n");
@@ -201,10 +249,17 @@ public class Countdown {
 		
 	}
 
+	/**
+	 * Views the recorded high scores..
+	 */
 	private void viewHighScores() {
+		//To be implemented.
 		System.out.println("View high scores.\n");
 	}
 	
+	/**
+	 * Exits the system.
+	 */
 	private void exitGame() {
 		System.out.println("Thank you for playing!");
 		System.exit(0);
