@@ -187,13 +187,13 @@ public class Countdown {
 	private void playSingleRound(String game) {
 		switch(game){
 		case "Letters":
-			System.out.println("Letters round.\n");
+			Round letters = new LettersRound(new Dictionary("files/dictionary.txt"));
 			break;
 		case "Numbers":
 			System.out.println("Numbers round.\n");
 			break;
 		case "Conundrum":
-			System.out.println("Conundrum round.\n");
+			Round conundrum = new Conundrum(new Dictionary("files/smalldictionary.txt"));
 			break;
 		default:
 			System.out.println("Error.\n");	

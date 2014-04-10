@@ -1,8 +1,16 @@
-
 public abstract class Round {
-	private String playerSolution;
 	
-	public abstract void submitSolution();
+	public String playerSolution;
+	
+	public Round(){
+		playerSolution = "";
+	}
+	
+	public void submitSolution(String solution){
+		playerSolution = solution;
+	}
+	
+	public abstract void playGame();
 	
 	public abstract boolean checkSolution();
 	
