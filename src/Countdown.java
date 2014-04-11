@@ -1,4 +1,5 @@
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Countdown {
@@ -136,7 +137,7 @@ public class Countdown {
 			} catch (InputMismatchException e) {
 				System.out.println("Please input a number between 1 and 4.");
 				scanner.next();
-			}
+			} 
 		}
 	}
 	
@@ -187,13 +188,13 @@ public class Countdown {
 	private void playSingleRound(String game) {
 		switch(game){
 		case "Letters":
-			Round letters = new LettersRound(new Dictionary("files/dictionary.txt"));
+			Round letters = new LettersRound(new Dictionary("files/dictionary.txt"), scanner);
 			break;
 		case "Numbers":
-			System.out.println("Numbers round.\n");
+			Round numbers = new NumbersRound(scanner);
 			break;
 		case "Conundrum":
-			Round conundrum = new Conundrum(new Dictionary("files/smalldictionary.txt"));
+			Round conundrum = new Conundrum(new Dictionary("files/smalldictionary.txt"), scanner);
 			break;
 		default:
 			System.out.println("Error.\n");	

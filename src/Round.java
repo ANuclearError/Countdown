@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public abstract class Round {
 	
 	public String playerSolution;
+	public Scanner scanner;
 	
-	public Round(){
+	public Round(Scanner in){
+		scanner = in;
 		playerSolution = "";
 	}
 	

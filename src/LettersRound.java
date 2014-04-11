@@ -11,16 +11,13 @@ import java.util.Scanner;
 public class LettersRound extends Round{
 
 	private String letters;
-	private ArrayList<Character> vowels;
-	private ArrayList<Character> consonants;
-	private Scanner scanner;
+	private ArrayList<Character> vowels, consonants;
 	private Dictionary dictionary;
 
-	public LettersRound(Dictionary dict){
-		super();
+	public LettersRound(Dictionary dict, Scanner in){
+		super(in);
 		vowels = readPool("files/vowels.txt");
 		consonants = readPool("files/consonants.txt");
-		scanner = new Scanner(System.in);
 		dictionary = dict;
 		letters = "";
 		playGame();
@@ -33,14 +30,14 @@ public class LettersRound extends Round{
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
 			while(line != null){
-				Scanner scanner = new Scanner(line);
-				char letter = scanner.next().charAt(0);
-				int number = scanner.nextInt();
+				Scanner sc = new Scanner(line);
+				char letter = sc.next().charAt(0);
+				int number = sc.nextInt();
 				for(int i=0; i<number; i++){
 					pool.add(letter);
 				}
 				line = br.readLine();
-				scanner.close();
+				sc.close();
 			}
 			br.close();
 		} catch (FileNotFoundException e) {

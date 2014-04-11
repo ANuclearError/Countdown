@@ -10,8 +10,8 @@ public class Conundrum extends Round{
 	private Dictionary dictionary;
 	
 	
-	public Conundrum(Dictionary dict){
-		super();
+	public Conundrum(Dictionary dict, Scanner in){
+		super(in);
 		dictionary = dict;
 		original = generateOriginal();
 		anagram = generateAnagram();
@@ -48,8 +48,7 @@ public class Conundrum extends Round{
 
 	public void playGame(){
 		System.out.println("The anagram is: " + anagram + "\nPlease put in your answer.");
-		Scanner sc = new Scanner(System.in);
-		String answer = sc.next();
+		String answer = scanner.next();
 		submitSolution(answer);
 		if(scoreSolution() > 0){
 			System.out.println("Well done, you were correct");
