@@ -20,7 +20,6 @@ public class LettersRound extends Round{
 		consonants = readPool("files/consonants.txt");
 		dictionary = dict;
 		letters = "";
-		playGame();
 	}
 
 	public ArrayList<Character> readPool(String filename){

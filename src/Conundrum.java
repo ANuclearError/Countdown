@@ -2,30 +2,24 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class Conundrum extends Round{
 	
-	private String original;
-	private String anagram;
+	private String original, anagram;
 	private Dictionary dictionary;
-	
 	
 	public Conundrum(Dictionary dict, Scanner in){
 		super(in);
 		dictionary = dict;
 		original = generateOriginal();
 		anagram = generateAnagram();
-		playGame();
 	}
 
-	
 	private String generateOriginal() {
 		String word = dictionary.getRandomWord();
 		if(word.length() == 9)
 			return word;
 		return generateOriginal();
 	}
-
 	
 	private String generateAnagram() {
 		Random random = new Random();
@@ -45,27 +39,25 @@ public class Conundrum extends Round{
 		return conundrum;	
 	}
 
-
 	public void playGame(){
 		System.out.println("The anagram is: " + anagram + "\nPlease put in your answer.");
 		String answer = scanner.next();
 		submitSolution(answer);
 		if(scoreSolution() > 0){
-			System.out.println("Well done, you were correct");
+			System.out.println("You scored: 10");
 		}
 		else{
 			revealSolution();
+			System.out.println("You scored: 0");
 		}
 	}
-	
-	
+		
 	@Override
 	public boolean checkSolution() {
 		if(playerSolution.equals(original))
 			return true;
 		return false;
 	}
-
 	
 	@Override
 	public int scoreSolution() {
@@ -73,11 +65,10 @@ public class Conundrum extends Round{
 			return 10;
 		return 0;
 	}
-
 	
 	@Override
 	public void revealSolution() {
-		System.out.println("Unlucky, the answer was: " + original);		
+		System.out.println("The answer was: " + original + ".");		
 	}
 
 }

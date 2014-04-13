@@ -10,7 +10,7 @@ public class NumbersRound extends Round{
 	private ArrayList<Integer> chosenNumbers, largeNumbers, smallNumbers;
 	private ArrayList<String> finalSolution;
 	private int target, answer, result, calculations;
-	private boolean isSolution;
+	private boolean isSolution, correct;
 
 	public NumbersRound(Scanner in){
 		super(in);
@@ -25,7 +25,6 @@ public class NumbersRound extends Round{
 		calculations = 0;
 		result = 0;
 		isSolution = false;
-		playGame();
 	}
 
 	private void fillArrays() {
@@ -87,11 +86,11 @@ public class NumbersRound extends Round{
 		System.out.println(target);
 		System.out.println(chosenNumbers);
 		answer = submitInitialAnswer();
+		if (answer >= (target - 10) && answer <= (target + 10)) {
+			correct = checkSolution();
+		}
 		int score = scoreSolution();
-		if(answer != 0)
-			System.out.println("You scored: " + score);
-		else
-			System.out.println("You scored: 0");
+		System.out.println("You scored: " + score);
 		if(score != 10)
 			calculations = 1000;
 		revealSolution();
@@ -163,16 +162,13 @@ public class NumbersRound extends Round{
 
 	@Override
 	public int scoreSolution() {
-		if (answer >= (target - 10) && answer <= (target + 10)) {
-			boolean correct = checkSolution();
-			if (correct){
-				if (answer == target)
-					return 10;
-				if (answer >= (target - 5) && answer <= (target + 5))
-					return 7;
-				return 5;
-			}	
-		}
+		if (correct){
+			if (answer == target)
+				return 10;
+			if (answer >= (target - 5) && answer <= (target + 5))
+				return 7;
+			return 5;
+		}	
 		return 0;
 	}
 
@@ -245,4 +241,5 @@ public class NumbersRound extends Round{
 		else
 			return 0;
 	}
+
 }
