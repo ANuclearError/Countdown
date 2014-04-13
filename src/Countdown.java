@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -80,7 +85,7 @@ public class Countdown {
 			switch (input) {
 			case 1:
 				lineBreak();
-				playFullGame();
+				startNewGame();
 				break;
 			case 2:
 				lineBreak();
@@ -100,7 +105,7 @@ public class Countdown {
 		}
 	}	
 	
-	private void playFullGame(){
+	private void startNewGame(){
 		System.out.println("Please input the format of this full game as a string so that:\n\tL=Letters Game\n\tN=Numbers Game\n\tC=Conundrum\n");
 		while(true){
 			String temp = scanner.next().toUpperCase();
@@ -116,12 +121,7 @@ public class Countdown {
 			}
 		}
 		System.out.println("Format chosen: " + format + "\n");
-		
-		while(round < format.length()){
-			nextRound();
-			round++;
-		}
-		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
+		playFullGame();
 	}
 
 	private void nextRound(){
@@ -157,13 +157,55 @@ public class Countdown {
 	}
 	
 	private void saveGame(){
+		try{
+			FileWriter fw = new FileWriter("files/save");
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(playerName);
+			bw.newLine();
+			bw.write(format);
+			bw.newLine();
+			bw.write(String.valueOf(round));
+			bw.newLine();
+			bw.write(String.valueOf(playerScore));
+			bw.newLine();
+			bw.close();
+		} catch(IOException e){
+			System.out.println("Error.");
+		}
 		System.out.println("Saving\n");
 	}
 	
 	private void resumeGame(){
+		try{
+			FileReader fr = new FileReader("files/save");
+			BufferedReader br = new BufferedReader(fr);
+			playerName = br.readLine();
+			format = br.readLine();
+			String line = br.readLine();
+			Scanner sc = new Scanner(line);
+			round = sc.nextInt();
+			line = br.readLine();
+			sc.close();
+			sc = new Scanner(line);
+			playerScore = sc.nextInt();
+			sc.close();
+			br.close();
+		} catch(IOException e){
+			System.out.println("Error.");
+		}
 		System.out.println("Resuming\n");
+		playFullGame();
+		
 	}
 	
+	private void playFullGame(){
+		lineBreak();
+		while(round < format.length()){
+			nextRound();
+			round++;
+		}
+		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
+	}
 	private void singleRoundMenu() {
 		displayMenu: while (true) {
 			lineBreak();
