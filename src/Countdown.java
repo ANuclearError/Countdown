@@ -1,8 +1,11 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -10,6 +13,7 @@ public class Countdown {
 	private String playerName, format;
 	private int playerScore, round;
 	private Scanner scanner;
+	private ArrayList<Score> highscores;
 	
 	public Countdown(){
 		System.out.println("Welcome to Countdown!\n");
@@ -266,9 +270,34 @@ public class Countdown {
 		return result;
 		
 	}
+	
+	private void readHighScores(){
+		FileReader fr;
+		try {
+			fr = new FileReader("files/highscore");
+			BufferedReader br = new BufferedReader(fr);
+			String line = br.readLine();
+			while(line != null){
+				
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	private void viewHighScores() {
 		System.out.println("View high scores.\n");
+		System.out.println("Score\tName\tDate");
+		Collections.sort(highscores);
+		int i = 0;
+		while(i<10 && i<highscores.size()){
+			System.out.println(highscores.get(i).toString());
+			i++;
+		}
 	}
 	
 	private void exitGame() {
