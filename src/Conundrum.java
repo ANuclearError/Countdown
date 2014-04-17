@@ -40,7 +40,7 @@ public class Conundrum extends Round{
 	}
 
 	public void playGame(){
-		System.out.println("The anagram is: " + anagram + "\nPlease put in your answer.");
+		System.out.print("The anagram is: " + anagram + "\nYour Answer: ");
 		String answer = scanner.next();
 		submitSolution(answer);
 		if(scoreSolution() > 0){

@@ -52,7 +52,7 @@ public class LettersRound extends Round{
 	@Override
 	public void playGame() {
 		letters = generateLetters();
-		System.out.println("Your letters are: " + letters + "\nPlease input your solution: ");
+		System.out.print("Your letters are: " + letters + "\nYour solution: ");
 		String answer = scanner.next();
 		submitSolution(answer);
 		System.out.println("You scored: " + scoreSolution());
@@ -61,7 +61,7 @@ public class LettersRound extends Round{
 
 	private int getNoOfVowels(){
 		int number;
-		System.out.println("How many vowels would you like? Choose 3, 4 or 5.");
+		System.out.print("How many vowels would you like? Choose 3, 4 or 5: ");
 		while(true){
 			try {
 				number = scanner.nextInt();

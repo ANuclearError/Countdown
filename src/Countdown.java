@@ -1,19 +1,23 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.ArrayList;
+//import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.StringTokenizer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Countdown {
 	private String playerName, format;
 	private int playerScore, round;
 	private Scanner scanner;
-	private ArrayList<Score> highscores;
+	private Dictionary dictionary;
 	
 	public Countdown(){
 		System.out.println("Welcome to Countdown!\n");
@@ -22,6 +26,7 @@ public class Countdown {
 		playerScore = 0;
 		round = 0;
 		format = "LLNLLLLNNLLLLNC";
+		dictionary = new Dictionary("files/dictionary.txt");
 		while(true)
 			displayMenu();
 	}
@@ -58,7 +63,6 @@ public class Countdown {
 				singleRoundMenu();
 				break;
 			case 3:
-				lineBreak();
 				viewHighScores();
 				break;
 			case 4:
@@ -110,6 +114,8 @@ public class Countdown {
 	}	
 	
 	private void startNewGame(){
+		round = 0;
+		playerScore = 0;
 		System.out.println("Please input the format of this full game as a string so that:\n\tL=Letters Game\n\tN=Numbers Game\n\tC=Conundrum\n");
 		while(true){
 			String temp = scanner.next().toUpperCase();
@@ -126,6 +132,19 @@ public class Countdown {
 		}
 		System.out.println("Format chosen: " + format + "\n");
 		playFullGame();
+	}
+	
+	private void playFullGame(){
+		lineBreak();
+		while(round < format.length()){
+			nextRound();
+			round++;
+		}
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		String date = dateFormat.format(new Date());
+		Score score = new Score(playerName, playerScore, date);
+		score.saveScore("files/highscore");
+		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
 	}
 
 	private void nextRound(){
@@ -164,13 +183,8 @@ public class Countdown {
 		try{
 			FileWriter fw = new FileWriter("files/save");
 			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write(playerName);
-			bw.newLine();
-			bw.write(format);
-			bw.newLine();
-			bw.write(String.valueOf(round));
-			bw.newLine();
-			bw.write(String.valueOf(playerScore));
+			String string = playerName + "|" + format + "|" + round + "|" + playerScore;
+			bw.write(string);
 			bw.newLine();
 			bw.close();
 		} catch(IOException e){
@@ -183,17 +197,13 @@ public class Countdown {
 		try{
 			FileReader fr = new FileReader("files/save");
 			BufferedReader br = new BufferedReader(fr);
-			playerName = br.readLine();
-			format = br.readLine();
-			String line = br.readLine();
-			Scanner sc = new Scanner(line);
-			round = sc.nextInt();
-			line = br.readLine();
-			sc.close();
-			sc = new Scanner(line);
-			playerScore = sc.nextInt();
-			sc.close();
+			String string = br.readLine();
 			br.close();
+			StringTokenizer st = new StringTokenizer(string, "|");
+			playerName = st.nextToken();
+			format = st.nextToken();
+			round = Integer.parseInt(st.nextToken());
+			playerScore = Integer.parseInt(st.nextToken());
 		} catch(IOException e){
 			System.out.println("Error.");
 		}
@@ -201,15 +211,7 @@ public class Countdown {
 		playFullGame();
 		
 	}
-	
-	private void playFullGame(){
-		lineBreak();
-		while(round < format.length()){
-			nextRound();
-			round++;
-		}
-		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
-	}
+
 	private void singleRoundMenu() {
 		displayMenu: while (true) {
 			lineBreak();
@@ -251,7 +253,7 @@ public class Countdown {
 		int result = 0;
 		switch(game){
 			case 'L':
-				Round letters = new LettersRound(new Dictionary("files/dictionary.txt"), scanner);
+				Round letters = new LettersRound(dictionary, scanner);
 				letters.playGame();
 				result = letters.scoreSolution();
 				break;
@@ -261,7 +263,7 @@ public class Countdown {
 				result = numbers.scoreSolution();
 				break;
 			case 'C':
-				Round conundrum = new Conundrum(new Dictionary("files/smalldictionary.txt"), scanner);
+				Round conundrum = new Conundrum(dictionary, scanner);
 				conundrum.playGame();
 				result = conundrum.scoreSolution();
 				break;
@@ -270,34 +272,10 @@ public class Countdown {
 		return result;
 		
 	}
-	
-	private void readHighScores(){
-		FileReader fr;
-		try {
-			fr = new FileReader("files/highscore");
-			BufferedReader br = new BufferedReader(fr);
-			String line = br.readLine();
-			while(line != null){
-				
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	private void viewHighScores() {
-		System.out.println("View high scores.\n");
-		System.out.println("Score\tName\tDate");
-		Collections.sort(highscores);
-		int i = 0;
-		while(i<10 && i<highscores.size()){
-			System.out.println(highscores.get(i).toString());
-			i++;
-		}
+		HighScores highscores = new HighScores("files/highscore");
+		highscores.viewHighScores();
 	}
 	
 	private void exitGame() {

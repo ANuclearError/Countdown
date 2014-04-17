@@ -174,18 +174,19 @@ public class NumbersRound extends Round{
 
 	@Override
 	public void revealSolution() {
-		ArrayList<String> progress_so_far = new ArrayList<String>();		
-		if (searchSolution(chosenNumbers, progress_so_far, target) && calculations > finalSolution.size()){
+		ArrayList<String> progress_so_far = new ArrayList<String>();
+		boolean check = searchSolution(chosenNumbers, progress_so_far, target);
+		if (check && calculations > finalSolution.size()){
 			System.out.println("Suggested solution: ");
 			for (int i = 0; i < finalSolution.size(); i++) {
 				System.out.println(finalSolution.get(i));
 			}
 		}
-		else if (!searchSolution(chosenNumbers, progress_so_far, target))
+		else if (!check)
 			System.out.println("No solution for this numbers combination.");
 	}
 
-	private boolean searchSolution(ArrayList<Integer> numbers, ArrayList<String> progress_so_far, int target) {
+	private boolean searchSolution(ArrayList<Integer> numbers, ArrayList<String> progress_so_far, int target_num) {
 		String[] op = { "+", "-", "*", "/" };
 		Collections.sort(numbers);
 
@@ -198,7 +199,7 @@ public class NumbersRound extends Round{
 					result = performCalculation(x, y, op[c]);
 
 					if (result > 0) {
-						if (result == target) {
+						if (result == target_num) {
 
 							isSolution = true;
 							progress_so_far.add(x + " " + op[c] + " " + y + " = " + result);
@@ -220,7 +221,7 @@ public class NumbersRound extends Round{
 							Collections.sort(new_numbers);
 
 							new_progress.add(x + " " + op[c] + " " + y + " = " + result);
-							searchSolution(new_numbers, new_progress, target);
+							searchSolution(new_numbers, new_progress, target_num);
 						}
 					}
 				}

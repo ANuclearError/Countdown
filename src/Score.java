@@ -1,30 +1,32 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.StringTokenizer;
 
 public class Score implements Comparable<Score>{
 	public String name;
 	public int score;
 	public String date;
 	
-	public Score(String playerName, int playerScore, String filename){
+	public Score(String playerName, int playerScore, String time){
 		name = playerName;
 		score = playerScore;
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		date = dateFormat.format(new Date());
-		saveScore(filename);
+		date = time;
+	}
+	
+	public Score(String line){
+		StringTokenizer st = new StringTokenizer(line, "|");
+		score = Integer.parseInt(st.nextToken());
+		name = st.nextToken();
+		date = st.nextToken();
 	}
 	
 	public String toString(){
-		return score + "\t" + name + "\t" + name;
+		return score + "\t" + name + "\t" + date;
 	}
 
 	@Override
 	public int compareTo(Score compare) {
-		// TODO Auto-generated method stub
 		return score - compare.score;
 	}
 	
@@ -32,14 +34,12 @@ public class Score implements Comparable<Score>{
 		try {
 			FileWriter fw = new FileWriter(filename, true);
 			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write(this.toString());
+			String line = this.score + "|" + this.name + "|" + this.date + "\n";
+			bw.write(line);
 			bw.newLine();
 			bw.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
-	
 }
