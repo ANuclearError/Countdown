@@ -7,6 +7,7 @@ import java.io.IOException;
 //import java.util.ArrayList;
 //import java.util.Collections;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.text.DateFormat;
@@ -244,7 +245,10 @@ public class Countdown {
 			} catch (InputMismatchException e) {
 				System.out.println("Please input a number between 1 and 4.");
 				scanner.next();
-			} 
+			} catch (NoSuchElementException e){
+				System.out.println("Error.");
+				scanner.next();
+			}
 		}
 	}
 

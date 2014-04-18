@@ -42,7 +42,6 @@ public static String getAnswer(int secs)  {
 	Scanner in = new Scanner(System.in);
 	str = in.next();
 	timer.cancel();
-	in.close();
 	return str;
 	
 }

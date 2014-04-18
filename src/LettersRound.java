@@ -52,10 +52,10 @@ public class LettersRound extends Round{
 	@Override
 	public void playGame() {
 		letters = generateLetters();
-//		System.out.print("Your letters are: " + letters + "\nYour solution: ");
 		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
 		CountdownTimer.setTimer(30);
 		while (CountdownTimer.interval > 0) {System.out.print("");}
+		scanner.next();
 		System.out.println("\nYou have 10s to input your solution.");
 		String answer = CountdownTimer.getAnswer(10);
 		if (CountdownTimer.input == false) 
