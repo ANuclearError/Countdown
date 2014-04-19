@@ -85,6 +85,10 @@ public class NumbersRound extends Round{
 	public void playGame() {
 		System.out.println(target);
 		System.out.println(chosenNumbers);
+		System.out.println("You have 30s to think.");
+		CountdownTimer.setTimer(5);
+		while (CountdownTimer.interval > 0) {System.out.print("");}
+		scanner.next();
 		answer = submitInitialAnswer();
 		if (answer >= (target - 10) && answer <= (target + 10)) {
 			correct = checkSolution();
@@ -98,17 +102,17 @@ public class NumbersRound extends Round{
 
 	public int submitInitialAnswer(){
 		int temp = 0;
-		System.out.println("What is your answer?");
+		System.out.println("What is your answer? 5s");
 		while(true){
 			try{
-				temp = scanner.nextInt();
+				temp = Integer.parseInt(CountdownTimer.getAnswer(5));
 				break;
-			} catch (InputMismatchException e) {
+			} catch (NumberFormatException e) {
 				System.out.println("No number in input, please enter a number.");
-				scanner.next();
-				continue;
 			}
 		}
+		if (CountdownTimer.input == false) 
+			temp = 0;
 		submitSolution(Integer.toString(temp));
 		return temp;
 	}
@@ -120,7 +124,8 @@ public class NumbersRound extends Round{
 		for(int num : chosenNumbers)
 			numPool.add(num);
 		scanner.nextLine();
-		while(numPool.size() != 1){
+		CountdownTimer.setTimer(15);
+		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + this.answer);
 			System.out.print("Please input calculation of form \"int op int\":\t");
@@ -156,7 +161,8 @@ public class NumbersRound extends Round{
 			} catch(NoSuchElementException e){
 				System.out.println("Invalid input");
 			}
-		}		
+		}
+		System.out.println("Timeout!");
 		return false;
 	}
 

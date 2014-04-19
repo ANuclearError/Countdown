@@ -29,6 +29,7 @@ public static void setTimer(int secs) {
 
 public static String getAnswer(int secs)  { 
 	timer = new Timer();
+	str = null;
 	input = true;
 	timer.schedule( new TimerTask(){
 		
