@@ -88,6 +88,7 @@ public class NumbersRound extends Round{
 		System.out.println("You have 30s to think.");
 		CountdownTimer.setTimer(5);
 		while (CountdownTimer.interval > 0) {System.out.print("");}
+		scanner = new Scanner(System.in);
 		scanner.next();
 		answer = submitInitialAnswer();
 		if (answer >= (target - 10) && answer <= (target + 10)) {

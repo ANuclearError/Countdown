@@ -19,7 +19,7 @@ public static void setTimer(int secs) {
 	System.out.print(interval + " ");
 	timer.scheduleAtFixedRate(new TimerTask() { 
 
-			public void run() {  
+			public void run() {
 				System.out.print(setInterval() + " "); 
 
 			} 

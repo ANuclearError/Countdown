@@ -53,8 +53,11 @@ public class LettersRound extends Round{
 	public void playGame() {
 		letters = generateLetters();
 		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
-		CountdownTimer.setTimer(30);
-		while (CountdownTimer.interval > 0) {System.out.print("");}
+		CountdownTimer.setTimer(10);
+		while (CountdownTimer.interval > 0) {
+			System.out.print("");
+		}
+		scanner = new Scanner(System.in);
 		scanner.next();
 		System.out.println("\nYou have 10s to input your solution.");
 		String answer = CountdownTimer.getAnswer(10);
