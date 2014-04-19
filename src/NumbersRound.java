@@ -124,14 +124,13 @@ public class NumbersRound extends Round{
 		ArrayList<Integer> numPool = new ArrayList<Integer>();
 		for(int num : chosenNumbers)
 			numPool.add(num);
-		scanner.nextLine();
-		CountdownTimer.setTimer(15);
 		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + this.answer);
 			System.out.print("Please input calculation of form \"int op int\":\t");
 			try{
-				Scanner in = new Scanner(scanner.nextLine());
+				String line = CountdownTimer.getAnswer(15);
+				Scanner in = new Scanner(line);
 				int int1 = in.nextInt();
 				String op = in.next();
 				int int2 = in.nextInt();
