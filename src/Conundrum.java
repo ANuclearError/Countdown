@@ -41,7 +41,7 @@ public class Conundrum extends Round{
 
 	public void playGame(){
 		System.out.println("The anagram is: " + anagram + "\nYour Answer (you have 30s): ");
-		String answer = CountdownTimer.getAnswer(10);
+		String answer = CountdownTimer.getAnswer(30);
 		if (CountdownTimer.input == false) 
 			submitSolution("");
 		else 

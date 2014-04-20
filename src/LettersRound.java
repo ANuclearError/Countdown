@@ -1,12 +1,5 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
-import java.util.Random;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class LettersRound extends Round{
 
@@ -53,14 +46,19 @@ public class LettersRound extends Round{
 	public void playGame() {
 		letters = generateLetters();
 		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
-		CountdownTimer.setTimer(10);
-		while (CountdownTimer.interval > 0) {
-			System.out.print("");
+		CountdownTimer.setTimer(30);
+		
+		while (CountdownTimer.interval > 0) 
+		{ 
+			try {
+				if(System.in.available() > 0)
+					scanner.next();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} 
 		}
-		scanner = new Scanner(System.in);
-		scanner.next();
 		System.out.println("\nYou have 10s to input your solution.");
-		String answer = CountdownTimer.getAnswer(10);
+		String answer = CountdownTimer.getAnswer(5);
 		if (CountdownTimer.input == false) 
 			submitSolution("");
 		else 

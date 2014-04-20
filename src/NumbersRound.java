@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.InputMismatchException;
@@ -86,10 +87,16 @@ public class NumbersRound extends Round{
 		System.out.println(target);
 		System.out.println(chosenNumbers);
 		System.out.println("You have 30s to think.");
-		CountdownTimer.setTimer(5);
-		while (CountdownTimer.interval > 0) {System.out.print("");}
-		scanner = new Scanner(System.in);
-		scanner.next();
+		CountdownTimer.setTimer(30);
+		while (CountdownTimer.interval > 0) 
+		{ 
+			try {
+				if(System.in.available() > 0)
+					scanner.next();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} 
+		}
 		answer = submitInitialAnswer();
 		if (answer >= (target - 10) && answer <= (target + 10)) {
 			correct = checkSolution();
@@ -103,14 +110,11 @@ public class NumbersRound extends Round{
 
 	public int submitInitialAnswer(){
 		int temp = 0;
-		System.out.println("What is your answer? 5s");
-		while(true){
-			try{
-				temp = Integer.parseInt(CountdownTimer.getAnswer(5));
-				break;
-			} catch (NumberFormatException e) {
-				System.out.println("No number in input, please enter a number.");
-			}
+		System.out.println("\nWhat is your answer? 5s");
+		try{
+			temp = Integer.parseInt(CountdownTimer.getAnswer(5));
+		} catch (NumberFormatException e) {
+			System.out.println("No number in input.");
 		}
 		if (CountdownTimer.input == false) 
 			temp = 0;
@@ -124,13 +128,18 @@ public class NumbersRound extends Round{
 		ArrayList<Integer> numPool = new ArrayList<Integer>();
 		for(int num : chosenNumbers)
 			numPool.add(num);
+		scanner.nextLine();
+		CountdownTimer.setTimer(15);
 		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + this.answer);
 			System.out.print("Please input calculation of form \"int op int\":\t");
 			try{
-				String line = CountdownTimer.getAnswer(15);
-				Scanner in = new Scanner(line);
+				Scanner in = new Scanner(scanner.nextLine());
+				if (in.next().equals("quit")) {
+					in.close();
+					return false;
+				}
 				int int1 = in.nextInt();
 				String op = in.next();
 				int int2 = in.nextInt();
@@ -157,14 +166,15 @@ public class NumbersRound extends Round{
 				}
 			}
 			catch(InputMismatchException e){
-				System.out.println("Invalid input");
+				System.out.println("Invalid input1");
 			} catch(NoSuchElementException e){
-				System.out.println("Invalid input");
+				System.out.println("Invalid input2");
 			}
 		}
 		System.out.println("Timeout!");
 		return false;
 	}
+
 
 	@Override
 	public int scoreSolution() {

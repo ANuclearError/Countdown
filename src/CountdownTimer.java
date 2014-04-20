@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 import java.util.Timer; 
 import java.util.TimerTask; 
@@ -16,11 +18,12 @@ public static void setTimer(int secs) {
 	interval = secs;
 	int delay = 1000; 
 	int period = 1000; 
-	System.out.print(interval + " ");
+//	System.out.print(interval + " ");
 	timer.scheduleAtFixedRate(new TimerTask() { 
 
 			public void run() {
-				System.out.print(setInterval() + " "); 
+//				System.out.print(setInterval() + " "); 
+				setInterval();
 
 			} 
 	}, delay, period);
@@ -35,16 +38,28 @@ public static String getAnswer(int secs)  {
 		
 			public void run(){
 				if( str == null){
-					System.out.println( "Timeout! No solution received. Press any button to continue." );
+					System.out.println( "Timeout! No solution received. " );
 					input = false;
 				}
 			}
 		}, secs*1000 );
 	Scanner in = new Scanner(System.in);
-	str = in.next();
+	
+	while(input)
+		{
+			try {
+				if(System.in.available() > 0)
+				{
+					str = in.next();
+					break;
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	timer.cancel();
 	return str;
-	
 }
 
 private static final int setInterval(){ 
