@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Scanner;
 import java.util.Timer; 
 import java.util.TimerTask; 
@@ -38,7 +37,7 @@ public static String getAnswer(int secs)  {
 		
 			public void run(){
 				if( str == null){
-					System.out.println( "Timeout! No solution received. " );
+					System.out.println( "\nTimeout! No solution received. " );
 					input = false;
 				}
 			}
@@ -50,7 +49,7 @@ public static String getAnswer(int secs)  {
 			try {
 				if(System.in.available() > 0)
 				{
-					str = in.next();
+					str = in.nextLine();
 					break;
 				}
 			} catch (IOException e) {

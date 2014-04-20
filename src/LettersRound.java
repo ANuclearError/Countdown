@@ -7,8 +7,8 @@ public class LettersRound extends Round{
 	private ArrayList<Character> vowels, consonants;
 	private Dictionary dictionary;
 
-	public LettersRound(Dictionary dict, Scanner in){
-		super(in);
+	public LettersRound(Dictionary dict, Scanner in, int timer){
+		super(in, timer);
 		vowels = readPool("files/vowels.txt");
 		consonants = readPool("files/consonants.txt");
 		dictionary = dict;
@@ -48,8 +48,7 @@ public class LettersRound extends Round{
 		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
 		CountdownTimer.setTimer(30);
 		
-		while (CountdownTimer.interval > 0) 
-		{ 
+		while (CountdownTimer.interval > 0) { 
 			try {
 				if(System.in.available() > 0)
 					scanner.next();

@@ -7,8 +7,8 @@ public class Conundrum extends Round{
 	private String original, anagram;
 	private Dictionary dictionary;
 	
-	public Conundrum(Dictionary dict, Scanner in){
-		super(in);
+	public Conundrum(Dictionary dict, Scanner in, int timer){
+		super(in, timer);
 		dictionary = dict;
 		original = generateOriginal();
 		anagram = generateAnagram();
@@ -40,12 +40,20 @@ public class Conundrum extends Round{
 	}
 
 	public void playGame(){
-		System.out.println("The anagram is: " + anagram + "\nYour Answer (you have 30s): ");
-		String answer = CountdownTimer.getAnswer(30);
-		if (CountdownTimer.input == false) 
-			submitSolution("");
-		else 
+		String answer;
+		if (timer) {
+			System.out.print("The anagram is: " + anagram + "\nYour Answer (you have 30s): ");
+			answer = CountdownTimer.getAnswer(30);
+			if (CountdownTimer.input == false)
+				submitSolution("");
+			else
+				submitSolution(answer);
+		}
+		else{
+			System.out.print("The anagram is: " + anagram + "\nYour Answer: ");
+			answer = scanner.next();
 			submitSolution(answer);
+		}
 		if(scoreSolution() > 0){
 			System.out.println("You scored: 10");
 		}

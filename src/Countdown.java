@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class Countdown {
 	private String playerName, format;
-	private int playerScore, round;
+	private int playerScore, round, timer;
 	private Scanner scanner;
 	private Dictionary dictionary;
 	
@@ -26,6 +26,7 @@ public class Countdown {
 		playerName = getPlayerName();
 		playerScore = 0;
 		round = 0;
+		timer = -1;
 		format = "LLNLLLLNNLLLLNC";
 		dictionary = new Dictionary("files/dictionary.txt");
 		while(true)
@@ -117,6 +118,24 @@ public class Countdown {
 	private void startNewGame(){
 		round = 0;
 		playerScore = 0;
+		setFormat();
+		timer = setTimer();
+		playFullGame();
+	}
+	
+	private int setTimer() {
+		System.out.print("Do you want a timer? Y/N: ");
+		char answer = scanner.next().toLowerCase().charAt(0);
+		if(answer == 'y')
+			return 1;
+		else if(answer == 'n')
+			return 0;
+		else
+			System.out.println("Invalid response");
+			return setTimer();
+	}
+
+	private void setFormat(){
 		System.out.println("Please input the format of this full game as a string so that:\n\tL=Letters Game\n\tN=Numbers Game\n\tC=Conundrum\n");
 		while(true){
 			String temp = scanner.next().toUpperCase();
@@ -132,14 +151,12 @@ public class Countdown {
 			}
 		}
 		System.out.println("Format chosen: " + format + "\n");
-		playFullGame();
 	}
 	
 	private void playFullGame(){
-		lineBreak();
-		while(round < format.length()){
-			nextRound();
-			round++;
+		boolean loop = true;
+		while(loop){
+			loop = nextRound();
 		}
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		String date = dateFormat.format(new Date());
@@ -148,7 +165,7 @@ public class Countdown {
 		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
 	}
 
-	private void nextRound(){
+	private boolean nextRound(){
 		lineBreak();
 		System.out.println("Please select an action.\n"
 				+ "\t1) Next Round.\n" + "\t2) Save game.\n"
@@ -162,21 +179,24 @@ public class Countdown {
 				lineBreak();
 				System.out.println("Starting next round.\n");
 				playerScore += playSingleRound(format.charAt(round));
-				break;
+				round ++;
+				return true;
 			case 2:
 				lineBreak();
 				saveGame();
-				break;
+				return true;
 			case 3:
 				lineBreak();
 				System.out.println("Quitting game.");
-				break;
+				return false;
 			default:
 				System.out.println("Your input does not represent an action.");
+				return nextRound();
 			}
 		} catch (InputMismatchException e) {
 			System.out.println("Please input a number between 1 and 4.");
 			scanner.next();
+			return nextRound();
 		}
 	}
 	
@@ -205,6 +225,7 @@ public class Countdown {
 			format = st.nextToken();
 			round = Integer.parseInt(st.nextToken());
 			playerScore = Integer.parseInt(st.nextToken());
+			
 		} catch(IOException e){
 			System.out.println("Error.");
 		}
@@ -214,6 +235,7 @@ public class Countdown {
 	}
 
 	private void singleRoundMenu() {
+		timer = -1;
 		displayMenu: while (true) {
 			lineBreak();
 			System.out.println("Which round would you like to play?\n"
@@ -257,17 +279,17 @@ public class Countdown {
 		int result = 0;
 		switch(game){
 			case 'L':
-				Round letters = new LettersRound(dictionary, scanner);
+				Round letters = new LettersRound(dictionary, scanner, timer);
 				letters.playGame();
 				result = letters.scoreSolution();
 				break;
 			case 'N':
-				Round numbers = new NumbersRound(scanner);
+				Round numbers = new NumbersRound(scanner, timer);
 				numbers.playGame();
 				result = numbers.scoreSolution();
 				break;
 			case 'C':
-				Round conundrum = new Conundrum(dictionary, scanner);
+				Round conundrum = new Conundrum(dictionary, scanner, timer);
 				conundrum.playGame();
 				result = conundrum.scoreSolution();
 				break;

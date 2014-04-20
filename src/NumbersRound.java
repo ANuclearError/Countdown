@@ -13,8 +13,8 @@ public class NumbersRound extends Round{
 	private int target, answer, result, calculations;
 	private boolean isSolution, correct;
 
-	public NumbersRound(Scanner in){
-		super(in);
+	public NumbersRound(Scanner in, int timer){
+		super(in, timer);
 		smallNumbers = new ArrayList<Integer>();
 		largeNumbers = new ArrayList<Integer>();
 		finalSolution = new ArrayList<String>();
@@ -39,7 +39,7 @@ public class NumbersRound extends Round{
 
 	private int getLargeNumbers(){
 		int lnumber = -1;
-		System.out.println("How many large numbers do you want? (0-4) ");
+		System.out.print("How many large numbers do you want?: (0-4) ");
 		while (true) {
 			try {
 				lnumber = scanner.nextInt();
@@ -86,16 +86,18 @@ public class NumbersRound extends Round{
 	public void playGame() {
 		System.out.println(target);
 		System.out.println(chosenNumbers);
-		System.out.println("You have 30s to think.");
-		CountdownTimer.setTimer(30);
-		while (CountdownTimer.interval > 0) 
-		{ 
-			try {
-				if(System.in.available() > 0)
-					scanner.next();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} 
+		if(timer){
+			System.out.println("You have 30s to think.");
+			CountdownTimer.setTimer(30);
+			while (CountdownTimer.interval > 0) 
+			{ 
+				try {
+					if(System.in.available() > 0)
+						scanner.next();
+				} catch (IOException e) {
+					e.printStackTrace();
+				} 
+			}
 		}
 		answer = submitInitialAnswer();
 		if (answer >= (target - 10) && answer <= (target + 10)) {
@@ -110,14 +112,24 @@ public class NumbersRound extends Round{
 
 	public int submitInitialAnswer(){
 		int temp = 0;
-		System.out.println("\nWhat is your answer? 5s");
-		try{
-			temp = Integer.parseInt(CountdownTimer.getAnswer(5));
-		} catch (NumberFormatException e) {
-			System.out.println("No number in input.");
+		if (timer) {
+			System.out.print("\nWhat is your answer? (5s): ");
+			try {
+				temp = Integer.parseInt(CountdownTimer.getAnswer(5));
+			} catch (NumberFormatException e) {
+				System.out.println("No number in input.");
+			}
+			if (CountdownTimer.input == false)
+				temp = 0;
 		}
-		if (CountdownTimer.input == false) 
-			temp = 0;
+		else{
+			System.out.print("\nWhat is your answer?");
+			try {
+				temp = Integer.parseInt(scanner.next());
+			} catch (NumberFormatException e) {
+				System.out.println("No number in input.");
+			}
+		}
 		submitSolution(Integer.toString(temp));
 		return temp;
 	}
@@ -129,17 +141,24 @@ public class NumbersRound extends Round{
 		for(int num : chosenNumbers)
 			numPool.add(num);
 		scanner.nextLine();
-		CountdownTimer.setTimer(15);
-		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
+		while((numPool.size() != 1)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + this.answer);
-			System.out.print("Please input calculation of form \"int op int\":\t");
+			System.out.print("Please input calculation of form \"int op int\"\t");
 			try{
-				Scanner in = new Scanner(scanner.nextLine());
-				if (in.next().equals("quit")) {
-					in.close();
+				String line;
+				if (timer) {
+					System.out.print("(10 Seconds): ");
+					line = CountdownTimer.getAnswer(10);
+				}
+				else{
+					System.out.print(": ");
+					line = scanner.nextLine();
+				}
+				if (line.toLowerCase().equals("quit") || line.toLowerCase().equals("exit")) {
 					return false;
 				}
+				Scanner in = new Scanner(line);
 				int int1 = in.nextInt();
 				String op = in.next();
 				int int2 = in.nextInt();
@@ -171,7 +190,6 @@ public class NumbersRound extends Round{
 				System.out.println("Invalid input2");
 			}
 		}
-		System.out.println("Timeout!");
 		return false;
 	}
 
@@ -198,8 +216,6 @@ public class NumbersRound extends Round{
 				System.out.println(finalSolution.get(i));
 			}
 		}
-		else if (!check)
-			System.out.println("No solution for this numbers combination.");
 	}
 
 	private boolean searchSolution(ArrayList<Integer> numbers, ArrayList<String> progress_so_far, int target_num) {
