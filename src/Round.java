@@ -12,7 +12,7 @@ public abstract class Round {
 	/**
 	 * The player's answer.
 	 */
-	public String playerSolution;
+	public String player1Solution, player2Solution;
 	/**
 	 * Handling user input.
 	 */
@@ -31,8 +31,9 @@ public abstract class Round {
 	 */
 	public Round(Scanner in, int timer){
 		scanner = in;
-		playerSolution = "";
-		if(timer == 0) //Timer is to be off
+		player1Solution = "";
+		player2Solution = "";
+		if(timer == 0)
 			this.timer = false;
 		else if(timer == 1) //Timer is to be on
 			this.timer = true;
@@ -52,35 +53,17 @@ public abstract class Round {
 				return setTimer();
 	}
 	
-	/**
-	 * The user wishes to finalize their answer.
-	 * 
-	 * @param solution The user's answer.
-	 * 
-	 */
-	public void submitSolution(String solution){
-		playerSolution = solution;
+
+	public void submitSolution(String solution1, String solution2){
+		player1Solution = solution1;
+		player2Solution = solution2;
 	}
 	
-	/**
-	 * This method controls the game, calling the methods that are required.
-	 */
-	public abstract void playGame();
+	public abstract void playGame(int numberOfPlayers);
 	
-	/**
-	 * Determines whether or not the player's answer is valid.
-	 * 
-	 * @return True if correct, else false.
-	 */
-	public abstract boolean checkSolution();
+	public abstract boolean checkSolution(String answer);
 	
-	/**
-	 * Scores the user's answer, in relation to the round's scoring scheme.
-	 * 
-	 * @return The user's score for the round.
-	 * 
-	 */
-	public abstract int scoreSolution();
+	public abstract int scoreSolution(String answer);
 	
 	/**
 	 * Reveals the solution of that round.
