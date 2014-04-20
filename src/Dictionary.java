@@ -55,8 +55,8 @@ public class Dictionary {
 	/**
 	 * Searches for a given word in words
 	 * 
-	 * @param target	The word to be searched.
-	 * @return	Whether or not it is found.
+	 * @param target The word to be searched.
+	 * @return Whether or not it is found.
 	 */
 	public Boolean findWord(String target) {
 		target = target.toLowerCase();
@@ -65,6 +65,7 @@ public class Dictionary {
 
 	/**
 	 * Gets a random word from the dictionary.
+	 * 
 	 * @return The returned word.
 	 */
 	public String getRandomWord() {

@@ -52,6 +52,9 @@ public class HighScores {
 		}
 	}
 
+	/**
+	 * Prints out all the scores in descending order.
+	 */
 	public void viewHighScores(){
 		Collections.sort(highscores); //Sorts the highscores.
 		Collections.reverse(highscores); //Reversed so that highest scores are top.
