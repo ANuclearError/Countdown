@@ -43,7 +43,7 @@ public class LettersRound extends Round{
 	}
 
 	@Override
-	public void playGame() {
+	public void playGame(int numberOfPlayers) {
 		letters = generateLetters();
 		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
 		CountdownTimer.setTimer(30);
@@ -56,13 +56,33 @@ public class LettersRound extends Round{
 				e.printStackTrace();
 			} 
 		}
-		System.out.println("\nYou have 10s to input your solution.");
-		String answer = CountdownTimer.getAnswer(5);
-		if (CountdownTimer.input == false) 
-			submitSolution("");
-		else 
-			submitSolution(answer);
-		System.out.println("You scored: " + scoreSolution());
+		String answer1 ="";
+		String answer2 ="";
+		switch (numberOfPlayers) {
+		case 1:
+			System.out.println("\nPlayer 1: You have 10s to input your solution.");
+			answer1 = CountdownTimer.getAnswer(5);
+			if (CountdownTimer.input == false) 
+				answer1 = "";
+			break;
+		case 2:
+			System.out.println("\nPlayer 1: You have 10s to input your solution.");
+			answer1 = CountdownTimer.getAnswer(5);
+			if (CountdownTimer.input == false) 
+				answer1 = "";
+			System.out.println("\nPlayer 2: You have 10s to input your solution.");
+			answer2 = CountdownTimer.getAnswer(5);
+			if (CountdownTimer.input == false) 
+				answer2 = "";
+			break;
+		}
+		
+//		if (CountdownTimer.input == false) 
+			submitSolution(answer1, answer2);
+//		else 
+//			submitSolution(answer);
+		System.out.println("Player1 scored: " + scoreSolution(answer1));
+		System.out.println("Player2 scored: " + scoreSolution(answer2));
 		revealSolution();
 		
 	}
@@ -136,15 +156,15 @@ public class LettersRound extends Round{
 	}
 
 	@Override
-	public boolean checkSolution() {
+	public boolean checkSolution(String playerSolution) {
 		return (dictionary.findWord(playerSolution) && checkIfValid(playerSolution));
 	}
 
 	@Override
-	public int scoreSolution() {
-		if(checkSolution() && playerSolution.length() < 9)
+	public int scoreSolution(String playerSolution) {
+		if(checkSolution(playerSolution) && playerSolution.length() < 9)
 			return playerSolution.length();
-		if(checkSolution())
+		if(checkSolution(playerSolution))
 			return 18;
 		return 0;
 	}
@@ -155,7 +175,9 @@ public class LettersRound extends Round{
 			FileReader fr = new FileReader("files/dictionary.txt");
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
-			int length = playerSolution.length();
+			int length = player1Solution.length();
+			if (player2Solution.length() > length)
+				length = player2Solution.length();
 			while(line != null){
 
 				if(line.length() > length && checkIfValid(line)) {

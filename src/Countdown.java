@@ -15,16 +15,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Countdown {
-	private String playerName, format;
-	private int playerScore, round, timer;
+	private String player1Name, player2Name, format;
+	private int player1Score, player2Score, round, timer;
 	private Scanner scanner;
 	private Dictionary dictionary;
+	static int numberOfPlayers;
 	
 	public Countdown(){
 		System.out.println("Welcome to Countdown!\n");
 		scanner = new Scanner(System.in);
-		playerName = getPlayerName();
-		playerScore = 0;
+		numberOfPlayers = getNumberOfPlayers();
+		getPlayerName(numberOfPlayers);
+		player1Score = 0;
+		player2Score = 0;
 		round = 0;
 		timer = -1;
 		format = "LLNLLLLNNLLLLNC";
@@ -33,17 +36,51 @@ public class Countdown {
 			displayMenu();
 	}
 		
+	private int getNumberOfPlayers() {
+		int n = -1;
+		while (true) {
+		try{
+			System.out.println("Select number of players: \n" +
+								"\t1) One player.\n" +
+								"\t2) Two players.\n");
+			n = scanner.nextInt();
+			switch(n){ 
+				case 1:
+					return 1;
+				case 2:
+					return 2;
+				default:
+					System.out.println("Invalid input. Please input 1 or 2.\n");
+			}	
+		}		
+		catch(InputMismatchException e){
+			System.out.println("Invalid input. Please input 1 or 2.\n");
+			scanner.next();
+		}
+		}
+	}
+	
 	private void lineBreak(){
 		for(int i=0; i<80; i++)
 			System.out.print("-");
 		System.out.println("\n");
 	}
 	
-	private String getPlayerName() {
-		System.out.print("Please enter your name: ");
-		String name = scanner.nextLine();
-		System.out.println("Hello " + name + ".\n");
-		return name;
+	private void getPlayerName(int n) {
+		switch (n) {
+		case 1:
+			System.out.print("Please enter your name: ");
+			player1Name = scanner.next();
+			System.out.println("Hello " + player1Name + ".\n");
+			break;
+		case 2:
+			System.out.print("Player 1: Please enter your name: ");
+			String player1Name = scanner.next();
+			System.out.print("Player 2: Please enter your name: ");
+			String player2Name = scanner.next();
+			System.out.println("Hello " + player1Name + ",  " + player2Name + ".\n");
+			break;
+		}
 	}
 
 	private void displayMenu(){
@@ -117,7 +154,8 @@ public class Countdown {
 	
 	private void startNewGame(){
 		round = 0;
-		playerScore = 0;
+		player1Score = 0;
+		player2Score = 0;
 		setFormat();
 		timer = setTimer();
 		playFullGame();
@@ -160,9 +198,9 @@ public class Countdown {
 		}
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		String date = dateFormat.format(new Date());
-		Score score = new Score(playerName, playerScore, date);
+		Score score = new Score(player1Name, player1Score, date);
 		score.saveScore("files/highscore");
-		System.out.println(playerName + ": Your score was " + playerScore + ".\n");
+		System.out.println(player1Name + ": Your score was " + player1Score + ".\n");
 	}
 
 	private boolean nextRound(){
@@ -178,7 +216,7 @@ public class Countdown {
 			case 1:
 				lineBreak();
 				System.out.println("Starting next round.\n");
-				playerScore += playSingleRound(format.charAt(round));
+				player1Score += playSingleRound(format.charAt(round));
 				round ++;
 				return true;
 			case 2:
@@ -204,7 +242,7 @@ public class Countdown {
 		try{
 			FileWriter fw = new FileWriter("files/save");
 			BufferedWriter bw = new BufferedWriter(fw);
-			String string = playerName + "|" + format + "|" + round + "|" + playerScore;
+			String string = player1Name + "|" + format + "|" + round + "|" + player1Score;
 			bw.write(string);
 			bw.newLine();
 			bw.close();
@@ -221,10 +259,10 @@ public class Countdown {
 			String string = br.readLine();
 			br.close();
 			StringTokenizer st = new StringTokenizer(string, "|");
-			playerName = st.nextToken();
+			player1Name = st.nextToken();
 			format = st.nextToken();
 			round = Integer.parseInt(st.nextToken());
-			playerScore = Integer.parseInt(st.nextToken());
+			player1Score = Integer.parseInt(st.nextToken());
 			
 		} catch(IOException e){
 			System.out.println("Error.");
@@ -280,19 +318,19 @@ public class Countdown {
 		switch(game){
 			case 'L':
 				Round letters = new LettersRound(dictionary, scanner, timer);
-				letters.playGame();
-				result = letters.scoreSolution();
+				letters.playGame(numberOfPlayers);
+//				result = letters.scoreSolution();
 				break;
-			case 'N':
-				Round numbers = new NumbersRound(scanner, timer);
-				numbers.playGame();
-				result = numbers.scoreSolution();
-				break;
-			case 'C':
-				Round conundrum = new Conundrum(dictionary, scanner, timer);
-				conundrum.playGame();
-				result = conundrum.scoreSolution();
-				break;
+//			case 'N':
+//				Round numbers = new NumbersRound(scanner, timer);
+//				numbers.playGame(numberOfPlayers);
+////				result = numbers.scoreSolution();
+//				break;
+//			case 'C':
+//				Round conundrum = new Conundrum(dictionary, scanner, timer);
+//				conundrum.playGame(numberOfPlayers);
+////				result = conundrum.scoreSolution();
+//				break;
 		}
 		System.out.println();
 		return result;
