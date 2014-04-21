@@ -1,6 +1,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
 /**
@@ -44,9 +45,13 @@ public class Score implements Comparable<Score>{
 	 */
 	public Score(String line){
 		StringTokenizer st = new StringTokenizer(line, "|"); //'|' seperates fields.
-		score = Integer.parseInt(st.nextToken());
-		name = st.nextToken();
-		date = st.nextToken();
+		try{
+			score = Integer.parseInt(st.nextToken());
+			name = st.nextToken();
+			date = st.nextToken();
+		} catch(NoSuchElementException e){
+			
+		}
 	}
 	
 	/**
@@ -73,7 +78,7 @@ public class Score implements Comparable<Score>{
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 			//Creating the string version, different from the toString() method.
-			String line = this.score + "|" + this.name + "|" + this.date + "\n";
+			String line = this.score + "|" + this.name + "|" + this.date;
 			bw.write(line);
 			bw.newLine();
 			bw.close();

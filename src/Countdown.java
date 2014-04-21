@@ -247,11 +247,12 @@ public class Countdown {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		String date = dateFormat.format(new Date());
 		
-		Score score = new Score(players[0], date); //Creates score object.
-		
-		score.saveScore("files/highscore"); //Saves the score.
-		
-		System.out.println(players[0].name + ": Your score was " + players[0].score + ".\n"); //Displays score.
+		for(Player p:players){
+			Score score = new Score(p, date); //Creates score object.
+			score.saveScore("files/highscore"); //Saves the score.
+			System.out.println(p.name + ": Your score was " + p.score + ".\n"); //Displays score.
+
+		}
 	}
 
 	/**
@@ -300,8 +301,10 @@ public class Countdown {
 		try{
 			FileWriter fw = new FileWriter("files/save");
 			BufferedWriter bw = new BufferedWriter(fw);
-			//String string = player1Name + "|" + format + "|" + round + "|" + player1Score;
-			//bw.write(string);
+			String string = format + "|" + round;
+			for(Player p:players)
+				string += "|" + p.name + "|" + p.score;
+			bw.write(string);
 			bw.newLine();
 			bw.close();
 		} catch(IOException e){
@@ -320,12 +323,17 @@ public class Countdown {
 			String string = br.readLine();
 			br.close();
 			
-			//Takes the information from the read line.
 			StringTokenizer st = new StringTokenizer(string, "|");
-			//player1Name = st.nextToken();
 			format = st.nextToken();
 			round = Integer.parseInt(st.nextToken());
-			//player1Score = Integer.parseInt(st.nextToken());
+			players[0].name = st.nextToken();
+			players[0].score = Integer.parseInt(st.nextToken());
+			numberOfPlayers = 1;
+			if(st.hasMoreTokens()){ //Determines whether the saved game is 2 player.
+				players[1].name = st.nextToken();
+				players[1].score = Integer.parseInt(st.nextToken());
+				numberOfPlayers = 2;
+			}
 			
 		} catch(IOException e){
 			System.out.println("Error.");
@@ -408,8 +416,10 @@ public class Countdown {
 	 * Allows the user to see the high scores.
 	 */
 	private void viewHighScores() {
+		lineBreak();
 		HighScores highscores = new HighScores("files/highscore");
 		highscores.viewHighScores();
+		System.out.println();
 	}
 	
 	/**

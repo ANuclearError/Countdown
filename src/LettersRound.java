@@ -3,10 +3,26 @@ import java.util.*;
 
 public class LettersRound extends Round{
 
+	/**
+	 * The 9 letters given to the player.
+	 */
 	private String letters;
+	/**
+	 * The pools containing the possible vowels and consonants
+	 */
 	private ArrayList<Character> vowels, consonants;
+	/**
+	 * The given dictionary.
+	 */
 	private Dictionary dictionary;
 
+	/**
+	 * Dictionary
+	 * @param dict The dictionary to be used.
+	 * @param in Input scanner.
+	 * @param timer Whether or not a timer is to be used.
+	 * @param players A list of participating players.
+	 */
 	public LettersRound(Dictionary dict, Scanner in, int timer, Player[] players){
 		super(in, timer, players);
 		vowels = readPool("files/vowels.txt");
@@ -15,13 +31,18 @@ public class LettersRound extends Round{
 		letters = "";
 	}
 
+	/**
+	 * Reads a text file which shows the possible amount of times a letter can appear.
+	 * @param filename The name of the file to be read.
+	 * @return The list of characters to be drawn from later.
+	 */
 	public ArrayList<Character> readPool(String filename){
 		ArrayList<Character> pool = new ArrayList<Character>();
 		try {
 			FileReader fr = new FileReader(filename);
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
-			while(line != null){
+			while(line != null){ //There are characters ot be added.
 				Scanner sc = new Scanner(line);
 				char letter = sc.next().charAt(0);
 				int number = sc.nextInt();
@@ -102,6 +123,11 @@ public class LettersRound extends Round{
 		revealSolution();	
 	}
 
+	/**
+	 * Declares the winner of the round in a 2 player game.
+	 * @param answer1 Player one's answer
+	 * @param answer2 Player two's answer.
+	 */
 	private void declareWinner(String answer1, String answer2){
 		if(answer1.length() > answer2.length()){
 			System.out.println(players[0].name + " scores " + scoreSolution(answer1) + " points.");
@@ -116,6 +142,10 @@ public class LettersRound extends Round{
 		}
 	}
 	
+	/**
+	 * Asks a player how many vowels they would like in the game.
+	 * @return The chosen number.
+	 */
 	private int getNoOfVowels(){
 		int number;
 		System.out.print("How many vowels would you like? Choose 3, 4 or 5: ");
@@ -138,6 +168,10 @@ public class LettersRound extends Round{
 		return number;
 	}
 
+	/**
+	 * Randomly generates a string based on 9 random letters, split by number of vowels.
+	 * @return The 9 letters.
+	 */
 	private String generateLetters(){
 		String tempLetters = "";
 		int loop = getNoOfVowels();
@@ -148,6 +182,11 @@ public class LettersRound extends Round{
 		return tempLetters;
 	}
 
+	/**
+	 * Choses a random character from 1 of 2 lists.
+	 * @param option The list to be chosen from.
+	 * @return The random character.
+	 */
 	private char dealLetter(int option){
 		char returnVal = 'a';
 		Random random = new Random();
@@ -164,12 +203,23 @@ public class LettersRound extends Round{
 		return returnVal;
 	}
 
+	/**
+	 * Removes a character from a string
+	 * @param string to remove from.
+	 * @param index The index of the character to be removed.
+	 * @return The string without removed character.
+	 */
 	private String removeChar(String string, int index){
 		StringBuilder sb = new StringBuilder(string);
 		sb.deleteCharAt(index);
 		return sb.toString();
 	}	
 
+	/**
+	 * Checks whether or not the given word can be made from the letters.
+	 * @param answer The answer to be checked.
+	 * @return if possible or not.
+	 */
 	private Boolean checkIfValid(String answer){
 		String temp = letters.toLowerCase();
 		answer = answer.toLowerCase();
@@ -199,6 +249,9 @@ public class LettersRound extends Round{
 		return 0;
 	}
 
+	/**
+	 * Reveals the best solution the computer can come up with.
+	 */
 	public void revealSolution() {
 		ArrayList<String> list = new ArrayList<String>();
 		try{
@@ -212,11 +265,13 @@ public class LettersRound extends Round{
 				length = playerSolutions[1].length();
 			while(line != null){
 
+				//A word has been found better than all currently in list.
 				if(line.length() > length && checkIfValid(line)) {
 					length = line.length();
 					list.clear();
-					list.add(line);
+					list.add(line); 
 				}
+				//A word has been found that should be in list.
 				else if(line.length() == length && checkIfValid(line)){
 					list.add(line);
 				}
@@ -234,6 +289,7 @@ public class LettersRound extends Round{
 			System.out.println("Error reading file. ");
 		}
 
+		//Prints out the list, depending on the number of solutions.
 		if(list.size() == 0)
 			System.out.println("There are no worthwhile solutions.");
 		else{

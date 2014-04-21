@@ -8,11 +8,33 @@ import java.util.Scanner;
 
 public class NumbersRound extends Round{
 
+	/**
+	 * A list of numbers chosen randomly, and the lists containing the possible numbers to be chosen.
+	 */
 	private ArrayList<Integer> chosenNumbers, largeNumbers, smallNumbers;
+	/**
+	 * The computer's solution it generates.
+	 */
 	private ArrayList<String> finalSolution;
+	/**
+	 * The target to be achieved.
+	 * The result that has been achieved.
+	 * The number of calculations required to reach result.
+	 * Player one's answer.
+	 * Player two's answer.
+	 */
 	private int target, result, calculations, answer1, answer2;
+	/**
+	 * Whether or not a solution is possible.
+	 */
 	private boolean isSolution;
 
+	/**
+	 * Constructor. 
+	 * @param in Input scanner.
+	 * @param timer Whether or not a timer is to be used.
+	 * @param players A list of participating players.
+	 */
 	public NumbersRound(Scanner in, int timer, Player[] players){
 		super(in, timer, players);
 		smallNumbers = new ArrayList<Integer>();
@@ -29,6 +51,9 @@ public class NumbersRound extends Round{
 		isSolution = false;
 	}
 
+	/**
+	 * Fills smallNumbers and largeNumbers with their pools.
+	 */
 	private void fillArrays() {
 		for (int i = 1; i < 3; i++) {
 			for (int j = 1; j < 11; j++)
@@ -38,6 +63,10 @@ public class NumbersRound extends Round{
 			largeNumbers.add(i);		
 	}
 
+	/**
+	 * User specifies how many large numbers are to be in the problem.
+	 * @return 0-4 large numbers.
+	 */
 	private int getLargeNumbers(){
 		int lnumber = -1;
 		System.out.print("How many large numbers do you want?: (0-4) ");
@@ -51,7 +80,7 @@ public class NumbersRound extends Round{
 					continue;
 				}
 			}
-			catch (InputMismatchException e) {
+			catch (InputMismatchException e) { //bad input
 				System.out.println("No number provided. Try again.");
 				scanner.next();
 			}
@@ -59,6 +88,10 @@ public class NumbersRound extends Round{
 		return lnumber;
 	}
 
+	/**
+	 * Generates a list of numbers based on the above method.
+	 * @return The list of numbers.
+	 */
 	private ArrayList<Integer> generateNumbers() {
 		int large = getLargeNumbers();
 		ArrayList<Integer> temp = new ArrayList<Integer>();
@@ -68,6 +101,13 @@ public class NumbersRound extends Round{
 		return temp;
 	}
 
+	/**
+	 * Creates a sublist given the parameters below.
+	 * @param list The list to generate numbers from
+	 * @param temp A temporary array containing added numbers
+	 * @param index How many numbers to be added.
+	 * @return The new list.
+	 */
 	private ArrayList<Integer> getSubList(ArrayList<Integer> list, ArrayList<Integer> temp, int index){
 		Random random = new Random();
 		for (int i = 0; i < index; i ++ ) {
@@ -78,6 +118,10 @@ public class NumbersRound extends Round{
 		return temp;
 	}
 
+	/**
+	 * Generates a target between 100 and 999 inclusive.
+	 * @return A randomly generate number.
+	 */
 	private int generateTarget() {
 		Random random = new Random();
 		return random.nextInt(899) + 101;
@@ -131,6 +175,11 @@ public class NumbersRound extends Round{
 		revealSolution();
 	}
 	
+	/**
+	 * Declares the winner of the round in a 2 player game.
+	 * @param answer1 Player one's answer
+	 * @param answer2 Player two's answer.
+	 */
 	private void declareWinner(int score1, int score2){
 		if(score1 > score2){
 			System.out.println(players[0].name + " scores " + score1 + " points.");
@@ -145,6 +194,10 @@ public class NumbersRound extends Round{
 		}
 	}
 
+	/**
+	 * User submits the answer they got.
+	 * @param numberOfPlayers How many people are playing.
+	 */
 	public void submitInitialAnswer(int numberOfPlayers){
 		if (timer) {
 			switch (numberOfPlayers) {
@@ -275,6 +328,13 @@ public class NumbersRound extends Round{
 		}
 	}
 
+	/**
+	 * A brute force solution for the computer to generate an optimal solution, if there is one.
+	 * @param numbers The numbers the computer has to work with.
+	 * @param progress_so_far The calculations it has made so far.
+	 * @param target_num The number the computer is aiming for.
+	 * @return
+	 */
 	private boolean searchSolution(ArrayList<Integer> numbers, ArrayList<String> progress_so_far, int target_num) {
 		String[] op = { "+", "-", "*", "/" };
 		Collections.sort(numbers);
@@ -319,6 +379,13 @@ public class NumbersRound extends Round{
 		return isSolution;	
 	}
 
+	/**
+	 * Performs an arithmetic calculation
+	 * @param int1 Number 1
+	 * @param int2 Number 2
+	 * @param op The Calculation
+	 * @return The answer.
+	 */
 	private int performCalculation(int int1, int int2, String op) {
 		if(op.equals("+"))
 			return int1 + int2;
