@@ -270,8 +270,6 @@ public class Countdown {
 			System.out.println();
 			switch (input) {
 			case 1:
-				lineBreak();
-				System.out.println("Next Round");
 				playSingleRound(format.charAt(round));
 				round++;
 				return (round < format.length());

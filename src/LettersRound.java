@@ -82,15 +82,15 @@ public class LettersRound extends Round{
 			}
 			switch (numberOfPlayers) {
 			case 1: // One player mode with timer
-				System.out.println("\nYou have 10s to input your solution.");
+				System.out.print("\nYou have 10s to input your solution: ");
 				answer1 = CountdownTimer.getAnswer(5);
 				System.out.println("You scored: " + scoreSolution(answer1));
 				players[0].updateScore(scoreSolution(answer1));
 				break;
 			case 2: // Two player mode with timer
-				System.out.println("\nPlayer 1: You have 10s to input your solution.");
+				System.out.print("\nPlayer 1: You have 10s to input your solution: ");
 				answer1 = CountdownTimer.getAnswer(5);
-				System.out.println("\nPlayer 2: You have 10s to input your solution.");
+				System.out.print("\nPlayer 2: You have 10s to input your solution: ");
 				answer2 = CountdownTimer.getAnswer(5);
 				declareWinner(answer1, answer2);
 				break;
@@ -106,9 +106,9 @@ public class LettersRound extends Round{
 				players[0].updateScore(scoreSolution(answer1));
 				break;
 			case 2: // Two player mode without timer
-				System.out.println("\nPlayer 1: Input your solution: ");
+				System.out.print("\nPlayer 1: Input your solution: ");
 				answer1 = scanner.next();
-				System.out.println("\nPlayer 2: Input your solution: ");
+				System.out.print("\nPlayer 2: Input your solution: ");
 				answer2 = scanner.next();
 				declareWinner(answer1, answer2);
 				break;
