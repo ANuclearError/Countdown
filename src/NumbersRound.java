@@ -291,7 +291,8 @@ public class NumbersRound extends Round{
 				System.out.println("Invalid input2");
 			}
 		}
-		System.out.println("Timeout!");
+		if(timer)
+			System.out.println("Timeout!");
 		return false;
 	}
 

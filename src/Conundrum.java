@@ -79,6 +79,7 @@ public class Conundrum extends Round{
 				System.out.print("\nYour Answer (you have 30s): ");
 				answer1 = CountdownTimer.getAnswer(30);
 				System.out.println("You scored: " + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
 				break;
 			case 2: //Two player game with timer.
 				System.out.println("The player who first finds the answer" + 
@@ -124,7 +125,9 @@ public class Conundrum extends Round{
 					System.out.println("Timeout.");
 				
 				System.out.println("Player 1 scored:" + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
 				System.out.println("Player 2 scored:" + scoreSolution(answer2));
+				players[1].updateScore(scoreSolution(answer2));
 
 			}			
 		}
@@ -137,6 +140,7 @@ public class Conundrum extends Round{
 				submitSolution(answer1, answer2);
 				//scores
 				System.out.println("You scored: " + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
 				break;
 			case 2: //Two player game without timer.
 				System.out.println("The player who first finds the answer - " + 
@@ -170,8 +174,10 @@ public class Conundrum extends Round{
 						checkSolution(answer2);
 					}
 				}
-				System.out.println("Player 1 scored:" + scoreSolution(answer1));
-				System.out.println("Player 2 scored:" + scoreSolution(answer2));
+				System.out.println("Player 1 scored: " + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
+				System.out.println("Player 2 scored: " + scoreSolution(answer2));
+				players[1].updateScore(scoreSolution(answer2));
 			}			
 		}
 	}
