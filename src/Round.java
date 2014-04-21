@@ -8,11 +8,14 @@ import java.util.Scanner;
  * 
  */
 public abstract class Round {
-	
+	/**
+	 * Players playing the game.
+	 */
+	public Player[] players;
 	/**
 	 * The player's answer.
 	 */
-	public String player1Solution, player2Solution;
+	public String[] playerSolutions;
 	/**
 	 * Handling user input.
 	 */
@@ -28,10 +31,10 @@ public abstract class Round {
 	 * @param in Scanner used to control input.
 	 * @param timer	Indicates what the condition of the timer should be.
 	 */
-	public Round(Scanner in, int timer){
+	public Round(Scanner in, int timer, Player[] players){
+		this.players = players;
 		scanner = in;
-		player1Solution = "";
-		player2Solution = "";
+		playerSolutions = new String[] {"",""};
 		if(timer == 0)
 			this.timer = false;
 		else if(timer == 1) //Timer is to be on
@@ -65,8 +68,8 @@ public abstract class Round {
 	 * @param solution2 Player Two's solution.
 	 */
 	public void submitSolution(String solution1, String solution2){
-		player1Solution = solution1;
-		player2Solution = solution2;
+		playerSolutions[0] = solution1;
+		playerSolutions[1] = solution2;
 	}
 	
 	/**
@@ -89,7 +92,7 @@ public abstract class Round {
 	 * @return The score.
 	 */
 	public abstract int scoreSolution(String answer);
-	
+		
 	/**
 	 * Reveals the solution of that round.
 	 */

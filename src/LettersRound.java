@@ -7,8 +7,8 @@ public class LettersRound extends Round{
 	private ArrayList<Character> vowels, consonants;
 	private Dictionary dictionary;
 
-	public LettersRound(Dictionary dict, Scanner in, int timer){
-		super(in, timer);
+	public LettersRound(Dictionary dict, Scanner in, int timer, Player[] players){
+		super(in, timer, players);
 		vowels = readPool("files/vowels.txt");
 		consonants = readPool("files/consonants.txt");
 		dictionary = dict;
@@ -45,48 +45,77 @@ public class LettersRound extends Round{
 	@Override
 	public void playGame(int numberOfPlayers) {
 		letters = generateLetters();
-		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
-		CountdownTimer.setTimer(30);
-		
-		while (CountdownTimer.interval > 0) { 
-			try {
-				if(System.in.available() > 0)
-					scanner.next();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} 
-		}
 		String answer1 ="";
 		String answer2 ="";
-		switch (numberOfPlayers) {
-		case 1:
-			System.out.println("\nPlayer 1: You have 10s to input your solution.");
-			answer1 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer1 = "";
-			break;
-		case 2:
-			System.out.println("\nPlayer 1: You have 10s to input your solution.");
-			answer1 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer1 = "";
-			System.out.println("\nPlayer 2: You have 10s to input your solution.");
-			answer2 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer2 = "";
-			break;
+		if (timer) {
+			System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
+			CountdownTimer.setTimer(30);
+			while (CountdownTimer.interval > 0) { 
+				try {
+					if(System.in.available() > 0)
+						scanner.next();
+				} catch (IOException e) {
+					e.printStackTrace();
+				} 
+			}
+			switch (numberOfPlayers) {
+			case 1:
+				System.out.println("\nYou have 10s to input your solution.");
+				answer1 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer1 = "";
+				System.out.println("You scored: " + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
+				break;
+			case 2:
+				System.out.println("\nPlayer 1: You have 10s to input your solution.");
+				answer1 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer1 = "";
+				System.out.println("\nPlayer 2: You have 10s to input your solution.");
+				answer2 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer2 = "";
+				declareWinner(answer1, answer2);
+				break;
+			}
 		}
-		
-//		if (CountdownTimer.input == false) 
-			submitSolution(answer1, answer2);
-//		else 
-//			submitSolution(answer);
-		System.out.println("Player 1 scored: " + scoreSolution(answer1));
-		System.out.println("Player 2 scored: " + scoreSolution(answer2));
-		revealSolution();
-		
+		else {
+			System.out.println("Your letters are: " + letters);
+			switch (numberOfPlayers) {
+			case 1:
+				System.out.print("\nInput your solution: ");
+				answer1 = scanner.next();
+				System.out.println("You scored: " + scoreSolution(answer1));
+				players[0].updateScore(scoreSolution(answer1));
+				break;
+			case 2:
+				System.out.println("\nPlayer 1: Input your solution: ");
+				answer1 = scanner.next();
+				System.out.println("\nPlayer 2: Input your solution: ");
+				answer2 = scanner.next();
+				declareWinner(answer1, answer2);
+				break;
+			}
+		}
+		submitSolution(answer1, answer2);
+		revealSolution();	
 	}
 
+	private void declareWinner(String answer1, String answer2){
+		if(answer1.length() > answer2.length()){
+			System.out.println(players[0].name + " scores " + scoreSolution(answer1) + " points.");
+			players[0].updateScore(scoreSolution(answer1));
+		} else if(answer1.length() < answer2.length()){
+			System.out.println(players[1].name + " scores " + scoreSolution(answer2) + " points.");
+			players[1].updateScore(scoreSolution(answer2));
+		} else{
+			System.out.println("Both players score " + scoreSolution(answer2) + " points.");
+			players[0].updateScore(scoreSolution(answer1));
+			players[1].updateScore(scoreSolution(answer2));
+		}
+	}
+	
 	private int getNoOfVowels(){
 		int number;
 		System.out.print("How many vowels would you like? Choose 3, 4 or 5: ");
@@ -143,6 +172,7 @@ public class LettersRound extends Round{
 
 	private Boolean checkIfValid(String answer){
 		String temp = letters.toLowerCase();
+		answer = answer.toLowerCase();
 		boolean valid = true;
 		for(int i=0; i<answer.length(); i++){
 			char character = answer.charAt(i);
@@ -175,9 +205,11 @@ public class LettersRound extends Round{
 			FileReader fr = new FileReader("files/dictionary.txt");
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
-			int length = player1Solution.length();
-			if (player2Solution.length() > length)
-				length = player2Solution.length();
+			int length = 0;
+			if (playerSolutions[0].length() <= 9)
+				length = playerSolutions[0].length();
+			if (playerSolutions[1].length() > length && playerSolutions[1].length() <=9)
+				length = playerSolutions[1].length();
 			while(line != null){
 
 				if(line.length() > length && checkIfValid(line)) {
@@ -203,12 +235,11 @@ public class LettersRound extends Round{
 		}
 
 		if(list.size() == 0)
-			System.out.println("There are no solutions worthwhile solutions.");
+			System.out.println("There are no worthwhile solutions.");
 		else{
 			System.out.println("These are the best solutions");
 			for(int i=0; i < list.size(); i++)
 				System.out.println("\t" + list.get(i));
 		}
 	}
-
 }

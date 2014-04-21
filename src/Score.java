@@ -30,9 +30,9 @@ public class Score implements Comparable<Score>{
 	 * @param playerScore Their score
 	 * @param time The date the score was achieved.
 	 */
-	public Score(String playerName, int playerScore, String time){
-		name = playerName;
-		score = playerScore;
+	public Score(Player player, String time){
+		name = player.name;
+		score = player.score;
 		date = time;
 	}
 	

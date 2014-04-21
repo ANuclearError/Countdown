@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Collections;
 //import java.util.ArrayList;
 //import java.util.Collections;
 import java.util.InputMismatchException;
@@ -24,11 +25,11 @@ public class Countdown {
 	/**
 	 * Player One and Two's Names, plus the format of a full game.
 	 */
-	private String player1Name, player2Name, format;
+	private String format;
 	/**
 	 * Player One and Two's current scores, the current round, and the status of the timer.
 	 */
-	private int player1Score, player2Score, round, timer;
+	private int round, timer;
 	/**
 	 * User input handling, using System.in
 	 */
@@ -42,6 +43,8 @@ public class Countdown {
 	 */
 	static int numberOfPlayers;
 	
+	private Player[] players;
+	
 	/**
 	 * Constructor.
 	 */
@@ -50,10 +53,13 @@ public class Countdown {
 		scanner = new Scanner(System.in);
 		
 		numberOfPlayers = getNumberOfPlayers();
-		getPlayerName(numberOfPlayers);
-		
-		player1Score = 0;
-		player2Score = 0;
+		players = new Player[numberOfPlayers];
+		for(int i = 0; i<numberOfPlayers; i++)
+			players[i] = new Player(scanner, i+1);
+		System.out.print("Hello " + players[0].name);
+		if(numberOfPlayers == 2)
+			System.out.print(" and " + players[1].name);
+		System.out.println("\n");
 		
 		round = 0;
 		timer = -1;
@@ -99,28 +105,6 @@ public class Countdown {
 		for(int i=0; i<80; i++)
 			System.out.print("-");
 		System.out.println("\n");
-	}
-	
-	/**
-	 * Gets the names of participating players
-	 * 
-	 * @param n How many players are playing.
-	 */
-	private void getPlayerName(int n) {
-		switch (n) {
-		case 1:
-			System.out.print("Please enter your name: ");
-			player1Name = scanner.next();
-			System.out.println("Hello " + player1Name + ".\n");
-			break;
-		case 2:
-			System.out.print("Player 1: Please enter your name: ");
-			String player1Name = scanner.next();
-			System.out.print("Player 2: Please enter your name: ");
-			String player2Name = scanner.next();
-			System.out.println("Hello " + player1Name + ",  " + player2Name + ".\n");
-			break;
-		}
 	}
 
 	/**
@@ -204,8 +188,9 @@ public class Countdown {
 	 */
 	private void startNewGame(){
 		round = 0;
-		player1Score = 0;
-		player2Score = 0;
+		players[0].score = 0;
+		if(numberOfPlayers == 2)
+			players[1].score = 0;
 		setFormat();
 		timer = setTimer(); //Is the timer desired?
 		playFullGame();
@@ -262,11 +247,11 @@ public class Countdown {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		String date = dateFormat.format(new Date());
 		
-		Score score = new Score(player1Name, player1Score, date); //Creates score object.
+		Score score = new Score(players[0], date); //Creates score object.
 		
 		score.saveScore("files/highscore"); //Saves the score.
 		
-		System.out.println(player1Name + ": Your score was " + player1Score + ".\n"); //Displays score.
+		System.out.println(players[0].name + ": Your score was " + players[0].score + ".\n"); //Displays score.
 	}
 
 	/**
@@ -285,10 +270,10 @@ public class Countdown {
 			switch (input) {
 			case 1:
 				lineBreak();
-				System.out.println("Starting next round.\n");
-				player1Score += playSingleRound(format.charAt(round));
-				round ++;
-				return true;
+				System.out.println("Next Round");
+				playSingleRound(format.charAt(round));
+				round++;
+				return (round < format.length());
 			case 2:
 				lineBreak();
 				saveGame();
@@ -315,8 +300,8 @@ public class Countdown {
 		try{
 			FileWriter fw = new FileWriter("files/save");
 			BufferedWriter bw = new BufferedWriter(fw);
-			String string = player1Name + "|" + format + "|" + round + "|" + player1Score;
-			bw.write(string);
+			//String string = player1Name + "|" + format + "|" + round + "|" + player1Score;
+			//bw.write(string);
 			bw.newLine();
 			bw.close();
 		} catch(IOException e){
@@ -337,10 +322,10 @@ public class Countdown {
 			
 			//Takes the information from the read line.
 			StringTokenizer st = new StringTokenizer(string, "|");
-			player1Name = st.nextToken();
+			//player1Name = st.nextToken();
 			format = st.nextToken();
 			round = Integer.parseInt(st.nextToken());
-			player1Score = Integer.parseInt(st.nextToken());
+			//player1Score = Integer.parseInt(st.nextToken());
 			
 		} catch(IOException e){
 			System.out.println("Error.");
@@ -398,20 +383,17 @@ public class Countdown {
 	 * @param game Determines which game is being played.
 	 * @return The score from that game.
 	 */
-	private int playSingleRound(char game) {
+	private void playSingleRound(char game) {
 		lineBreak();
-		int result = 0;
 		switch(game){
 			case 'L':
-				Round letters = new LettersRound(dictionary, scanner, timer);
+				Round letters = new LettersRound(dictionary, scanner, timer, players);
 				letters.playGame(numberOfPlayers);
-//				result = letters.scoreSolution();
 				break;
-//			case 'N':
-//				Round numbers = new NumbersRound(scanner, timer);
-//				numbers.playGame(numberOfPlayers);
-////				result = numbers.scoreSolution();
-//				break;
+			case 'N':
+				Round numbers = new NumbersRound(scanner, timer, players);
+				numbers.playGame(numberOfPlayers);
+				break;
 //			case 'C':
 //				Round conundrum = new Conundrum(dictionary, scanner, timer);
 //				conundrum.playGame(numberOfPlayers);
@@ -419,7 +401,6 @@ public class Countdown {
 //				break;
 		}
 		System.out.println();
-		return result;
 		
 	}
 
