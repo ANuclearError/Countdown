@@ -82,8 +82,8 @@ public class Conundrum extends Round{
 				players[0].updateScore(scoreSolution(answer1));
 				break;
 			case 2: //Two player game with timer.
-				System.out.println("The player who first finds the answer" + 
-									" type in your number (1 - player1, 2 -player2)");
+				System.out.println("The player who first finds the answer - " + 
+									" type in your number (1 - Player1, 2 - Player2)");
 				int nofplayer = 0; //number of player who buzzed in first
 				int pause = 0; //to store remaining time after buzzer pressed
 				CountdownTimer.setTimer(30);
