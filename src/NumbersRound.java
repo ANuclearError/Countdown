@@ -113,10 +113,12 @@ public class NumbersRound extends Round{
 			System.out.println("You scored: " + score1 );
 			break;
 		case 2:
+			System.out.println("\nPlayer 1 : ");
 			if (answer1 >= (target - 10) && answer1 <= (target + 10)) {
 				if (checkSolution(Integer.toString(answer1)))
 					score1 = scoreSolution(Integer.toString(answer1));
 			}
+			System.out.println("\nPlayer 2 : (Press Enter to start)");
 			if (answer2 >= (target - 10) && answer2 <= (target + 10)) {
 				if (checkSolution(Integer.toString(answer2)))
 					score2 = scoreSolution(Integer.toString(answer2));
