@@ -45,46 +45,62 @@ public class LettersRound extends Round{
 	@Override
 	public void playGame(int numberOfPlayers) {
 		letters = generateLetters();
-		System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
-		CountdownTimer.setTimer(30);
-		
-		while (CountdownTimer.interval > 0) { 
-			try {
-				if(System.in.available() > 0)
-					scanner.next();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} 
-		}
 		String answer1 ="";
 		String answer2 ="";
-		switch (numberOfPlayers) {
-		case 1:
-			System.out.println("\nPlayer 1: You have 10s to input your solution.");
-			answer1 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer1 = "";
-			break;
-		case 2:
-			System.out.println("\nPlayer 1: You have 10s to input your solution.");
-			answer1 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer1 = "";
-			System.out.println("\nPlayer 2: You have 10s to input your solution.");
-			answer2 = CountdownTimer.getAnswer(5);
-			if (CountdownTimer.input == false) 
-				answer2 = "";
-			break;
+		if (timer) {
+			System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
+			CountdownTimer.setTimer(30);
+			while (CountdownTimer.interval > 0) { 
+				try {
+					if(System.in.available() > 0)
+						scanner.next();
+				} catch (IOException e) {
+					e.printStackTrace();
+				} 
+			}
+			switch (numberOfPlayers) {
+			case 1:
+				System.out.println("\nYou have 10s to input your solution.");
+				answer1 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer1 = "";
+				System.out.println("You scored: " + scoreSolution(answer1));
+				break;
+			case 2:
+				System.out.println("\nPlayer 1: You have 10s to input your solution.");
+				answer1 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer1 = "";
+				System.out.println("\nPlayer 2: You have 10s to input your solution.");
+				answer2 = CountdownTimer.getAnswer(5);
+				if (CountdownTimer.input == false) 
+					answer2 = "";
+				System.out.println("Player1 scored: " + scoreSolution(answer1));
+				System.out.println("Player2 scored: " + scoreSolution(answer2));
+				break;
+			}
 		}
 		
-//		if (CountdownTimer.input == false) 
-			submitSolution(answer1, answer2);
-//		else 
-//			submitSolution(answer);
-		System.out.println("Player1 scored: " + scoreSolution(answer1));
-		System.out.println("Player2 scored: " + scoreSolution(answer2));
-		revealSolution();
-		
+		else {
+			System.out.println("Your letters are: " + letters);
+			switch (numberOfPlayers) {
+			case 1:
+				System.out.print("\nInput your solution: ");
+				answer1 = scanner.next();		
+				System.out.println("You scored: " + scoreSolution(answer1));			
+				break;
+			case 2:
+				System.out.println("\nPlayer 1: Input your solution: ");
+				answer1 = scanner.next();
+				System.out.println("\nPlayer 2: Input your solution: ");
+				answer2 = scanner.next();			
+				System.out.println("Player1 scored: " + scoreSolution(answer1));
+				System.out.println("Player2 scored: " + scoreSolution(answer2));			
+				break;
+			}
+		}
+		submitSolution(answer1, answer2);
+		revealSolution();	
 	}
 
 	private int getNoOfVowels(){
@@ -143,6 +159,7 @@ public class LettersRound extends Round{
 
 	private Boolean checkIfValid(String answer){
 		String temp = letters.toLowerCase();
+		answer = answer.toLowerCase();
 		boolean valid = true;
 		for(int i=0; i<answer.length(); i++){
 			char character = answer.charAt(i);
@@ -175,8 +192,10 @@ public class LettersRound extends Round{
 			FileReader fr = new FileReader("files/dictionary.txt");
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
-			int length = player1Solution.length();
-			if (player2Solution.length() > length)
+			int length = 0;
+			if (player1Solution.length() <= 9)
+				length = player1Solution.length();
+			if (player2Solution.length() > length && player2Solution.length() <=9)
 				length = player2Solution.length();
 			while(line != null){
 
@@ -203,7 +222,7 @@ public class LettersRound extends Round{
 		}
 
 		if(list.size() == 0)
-			System.out.println("There are no solutions worthwhile solutions.");
+			System.out.println("There are no worthwhile solutions.");
 		else{
 			System.out.println("These are the best solutions");
 			for(int i=0; i < list.size(); i++)

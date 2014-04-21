@@ -321,11 +321,11 @@ public class Countdown {
 				letters.playGame(numberOfPlayers);
 //				result = letters.scoreSolution();
 				break;
-//			case 'N':
-//				Round numbers = new NumbersRound(scanner, timer);
-//				numbers.playGame(numberOfPlayers);
-////				result = numbers.scoreSolution();
-//				break;
+			case 'N':
+				Round numbers = new NumbersRound(scanner, timer);
+				numbers.playGame(numberOfPlayers);
+//				result = numbers.scoreSolution();
+				break;
 //			case 'C':
 //				Round conundrum = new Conundrum(dictionary, scanner, timer);
 //				conundrum.playGame(numberOfPlayers);
