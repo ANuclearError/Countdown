@@ -394,11 +394,11 @@ public class Countdown {
 				Round numbers = new NumbersRound(scanner, timer, players);
 				numbers.playGame(numberOfPlayers);
 				break;
-//			case 'C':
-//				Round conundrum = new Conundrum(dictionary, scanner, timer);
-//				conundrum.playGame(numberOfPlayers);
-////				result = conundrum.scoreSolution();
-//				break;
+			case 'C':
+				Round conundrum = new Conundrum(dictionary, scanner, timer, players);
+				conundrum.playGame(numberOfPlayers);
+//				result = conundrum.scoreSolution();
+				break;
 		}
 		System.out.println();
 		
