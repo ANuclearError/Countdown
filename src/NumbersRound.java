@@ -202,6 +202,8 @@ public class NumbersRound extends Round{
 		scanner.nextLine();
 		if(timer)
 			CountdownTimer.setTimer(15);
+		else
+			CountdownTimer.interval = 1;
 		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + playerAnswer);
