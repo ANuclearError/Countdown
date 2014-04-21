@@ -1,10 +1,5 @@
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class NumbersRound extends Round{
 
@@ -131,9 +126,10 @@ public class NumbersRound extends Round{
 	public void playGame(int numberOfPlayers) {
 		System.out.println(target);
 		System.out.println(chosenNumbers);
-		if(timer){
+		if(timer){ 
 			System.out.println("You have 30s to think.");
 			CountdownTimer.setTimer(30);
+			// while-loop to read any input during timer
 			while (CountdownTimer.interval > 0) 
 			{ 
 				try {
@@ -148,7 +144,7 @@ public class NumbersRound extends Round{
 		int score1 = 0;
 		int score2 = 0;
 		switch (numberOfPlayers) {
-		case 1:
+		case 1:// One player mode 
 			if (answer1 >= (target - 10) && answer1 <= (target + 10)) {
 				if (checkSolution(Integer.toString(answer1)))
 					score1 = scoreSolution(Integer.toString(answer1));
@@ -156,7 +152,7 @@ public class NumbersRound extends Round{
 			}
 			System.out.println("You scored: " + score1 );
 			break;
-		case 2:
+		case 2: // Two player mode
 			System.out.println("\nPlayer 1 : ");
 			if (answer1 >= (target - 10) && answer1 <= (target + 10)) {
 				if (checkSolution(Integer.toString(answer1)))
@@ -206,11 +202,8 @@ public class NumbersRound extends Round{
 				try {
 					answer1 = Integer.parseInt(CountdownTimer.getAnswer(5));
 				} catch (NumberFormatException e) {
-					System.out.println("No number in input.");
-				}
+					System.out.println("No number in input."); }
 				break;
-//				if (CountdownTimer.input == false)
-//					answer1 = 0;
 			case 2:
 				System.out.print("\nPlayer1: What is your answer? (5s): ");
 				try {
@@ -225,8 +218,6 @@ public class NumbersRound extends Round{
 					System.out.println("No number in input.");
 				}
 				break;
-//				if (CountdownTimer.input == false)
-//					temp = 0;
 			}
 			
 		}
@@ -256,9 +247,9 @@ public class NumbersRound extends Round{
 			numPool.add(num);
 		scanner.nextLine();
 		if(timer)
-			CountdownTimer.setTimer(15);
+			CountdownTimer.setTimer(25); // set timer for player to input calculations
 		else
-			CountdownTimer.interval = 1;
+			CountdownTimer.interval = 1; // set value to enter while-loop
 		while((numPool.size() != 1) && (CountdownTimer.interval > 0)){
 			Collections.sort(numPool);
 			System.out.println("Numbers: " + numPool + "\nTarget: " + playerAnswer);
@@ -266,7 +257,7 @@ public class NumbersRound extends Round{
 			try{
 				String line = scanner.nextLine();
 				if (line.toLowerCase().equals("quit") || line.toLowerCase().equals("exit")) {
-					return false;
+					return false; //allows user to give up
 				}
 				Scanner in = new Scanner(line);
 				int int1 = in.nextInt();

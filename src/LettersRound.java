@@ -68,9 +68,10 @@ public class LettersRound extends Round{
 		letters = generateLetters();
 		String answer1 ="";
 		String answer2 ="";
-		if (timer) {
+		if (timer) { 
 			System.out.println("Your letters are: " + letters + "\nYou have 30s to think.");
 			CountdownTimer.setTimer(30);
+			// while-loop to read any input during timer
 			while (CountdownTimer.interval > 0) { 
 				try {
 					if(System.in.available() > 0)
@@ -80,23 +81,17 @@ public class LettersRound extends Round{
 				} 
 			}
 			switch (numberOfPlayers) {
-			case 1:
+			case 1: // One player mode with timer
 				System.out.println("\nYou have 10s to input your solution.");
 				answer1 = CountdownTimer.getAnswer(5);
-				if (CountdownTimer.input == false) 
-					answer1 = "";
 				System.out.println("You scored: " + scoreSolution(answer1));
 				players[0].updateScore(scoreSolution(answer1));
 				break;
-			case 2:
+			case 2: // Two player mode with timer
 				System.out.println("\nPlayer 1: You have 10s to input your solution.");
 				answer1 = CountdownTimer.getAnswer(5);
-				if (CountdownTimer.input == false) 
-					answer1 = "";
 				System.out.println("\nPlayer 2: You have 10s to input your solution.");
 				answer2 = CountdownTimer.getAnswer(5);
-				if (CountdownTimer.input == false) 
-					answer2 = "";
 				declareWinner(answer1, answer2);
 				break;
 			}
@@ -104,13 +99,13 @@ public class LettersRound extends Round{
 		else {
 			System.out.println("Your letters are: " + letters);
 			switch (numberOfPlayers) {
-			case 1:
+			case 1: // One player mode without timer
 				System.out.print("\nInput your solution: ");
 				answer1 = scanner.next();
 				System.out.println("You scored: " + scoreSolution(answer1));
 				players[0].updateScore(scoreSolution(answer1));
 				break;
-			case 2:
+			case 2: // Two player mode without timer
 				System.out.println("\nPlayer 1: Input your solution: ");
 				answer1 = scanner.next();
 				System.out.println("\nPlayer 2: Input your solution: ");

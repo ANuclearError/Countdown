@@ -405,7 +405,6 @@ public class Countdown {
 			case 'C':
 				Round conundrum = new Conundrum(dictionary, scanner, timer, players);
 				conundrum.playGame(numberOfPlayers);
-//				result = conundrum.scoreSolution();
 				break;
 		}
 		System.out.println();
