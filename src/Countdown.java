@@ -1,12 +1,8 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-//import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Collections;
-//import java.util.ArrayList;
-//import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -80,7 +76,7 @@ public class Countdown {
 			try{
 				System.out.println("Select number of players: \n" +
 									"\t1) One player.\n" +
-									"\t2) Two players.\n");
+									"\t2) Two players.");
 				n = scanner.nextInt();
 				switch(n){ 
 					case 1:

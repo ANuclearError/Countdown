@@ -79,6 +79,31 @@ public abstract class Round {
 	public abstract void playGame(int numberOfPlayers);
 	
 	/**
+	 * Playing the game with 1 player, and a timer.
+	 * @param answer1 Player One's answer.
+	 */
+	public abstract void timerOnePlayer(String answer1);
+	
+	/**
+	 * Playing the game with 1 player, and a timer.
+	 * @param answer1 Player One's answer.
+	 */
+	public abstract void timerTwoPlayer(String answer1, String answer2);
+
+	/**
+	 * Playing the game with 1 player, and a timer.
+	 * @param answer1 Player One's answer.
+	 */
+	public abstract void noTimerOnePlayer(String answer1);
+
+	/**
+	 * Playing the game with 1 player, and a timer.
+	 * @param answer1 Player One's answer.
+	 */
+	public abstract void noTimerTwoPlayer(String answer1, String answer2);
+
+	
+	/**
 	 * Checks whether or not a given answer is correct.
 	 * @param answer The answer to be checked.
 	 * @return Is the answer correct?

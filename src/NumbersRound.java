@@ -1,6 +1,13 @@
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * An implementation of Countdown's Number round, in which the players
+ * are given 30 seconds to calculate a target number given 6 randomly 
+ * chosen numbers.
+ * @author Aidan O'Grady, Kristine Semjonova
+ *
+ */
 public class NumbersRound extends Round{
 
 	/**
@@ -148,7 +155,7 @@ public class NumbersRound extends Round{
 			if (answer1 >= (target - 10) && answer1 <= (target + 10)) {
 				if (checkSolution(Integer.toString(answer1)))
 					score1 = scoreSolution(Integer.toString(answer1));
-					players[0].updateScore(score1);
+				players[0].updateScore(score1);
 			}
 			System.out.println("You scored: " + score1 );
 			break;
@@ -175,6 +182,45 @@ public class NumbersRound extends Round{
 		revealSolution();
 	}
 	
+	@Override
+	public void timerOnePlayer(String answer) {
+		System.out.print("\nWhat is your answer? (5s): ");
+		try {
+			answer1 = Integer.parseInt(CountdownTimer.getAnswer(5));
+		} catch (NumberFormatException e) {
+			System.out.println("No number in input."); }
+	}
+
+	@Override
+	public void timerTwoPlayer(String answer, String answer0) {
+		System.out.print("\nPlayer1: What is your answer? (5s): ");
+		try {
+			answer1 = Integer.parseInt(CountdownTimer.getAnswer(5));
+		} catch (NumberFormatException e) {
+			System.out.println("No number in input.");
+		}
+		System.out.print("\nPlayer2: What is your answer? (5s): ");
+		try {
+			answer2 = Integer.parseInt(CountdownTimer.getAnswer(5));
+		} catch (NumberFormatException e) {
+			System.out.println("No number in input.");
+		}
+	}
+
+	@Override
+	public void noTimerOnePlayer(String answer) {
+		System.out.print("\nWhat is your answer? : ");
+		answer1 = scanner.nextInt();
+	}
+
+	@Override
+	public void noTimerTwoPlayer(String answer0, String answer) {
+		System.out.print("\nPlayer 1: What is your answer? : ");
+		answer1 = scanner.nextInt();
+		System.out.print("\nPlayer 2: What is your answer? : ");
+		answer2 = scanner.nextInt();
+	}
+
 	/**
 	 * Declares the winner of the round in a 2 player game.
 	 * @param answer1 Player one's answer
@@ -202,40 +248,20 @@ public class NumbersRound extends Round{
 		if (timer) {
 			switch (numberOfPlayers) {
 			case 1:
-				System.out.print("\nWhat is your answer? (5s): ");
-				try {
-					answer1 = Integer.parseInt(CountdownTimer.getAnswer(5));
-				} catch (NumberFormatException e) {
-					System.out.println("No number in input."); }
+				timerOnePlayer("");
 				break;
 			case 2:
-				System.out.print("\nPlayer1: What is your answer? (5s): ");
-				try {
-					answer1 = Integer.parseInt(CountdownTimer.getAnswer(5));
-				} catch (NumberFormatException e) {
-					System.out.println("No number in input.");
-				}
-				System.out.print("\nPlayer2: What is your answer? (5s): ");
-				try {
-					answer2 = Integer.parseInt(CountdownTimer.getAnswer(5));
-				} catch (NumberFormatException e) {
-					System.out.println("No number in input.");
-				}
+				timerTwoPlayer("","");
 				break;
-			}
-			
+			}	
 		}
 		else{
 			switch (numberOfPlayers) {
 			case 1:
-				System.out.print("\nWhat is your answer? : ");
-				answer1 = scanner.nextInt();
+				noTimerOnePlayer("");
 				break;
 			case 2:
-				System.out.print("\nPlayer1: What is your answer? : ");
-				answer1 = scanner.nextInt();
-				System.out.print("\nPlayer2: What is your answer? : ");
-				answer2 = scanner.nextInt();
+				noTimerTwoPlayer("","");
 				break;
 			}
 		}
@@ -308,7 +334,7 @@ public class NumbersRound extends Round{
 			return 10;
 		if (answer >= (target - 5) && answer <= (target + 5))
 			return 7;
-		
+
 		return 5;
 	}
 
@@ -394,5 +420,4 @@ public class NumbersRound extends Round{
 		else
 			return 0;
 	}
-
 }

@@ -1,6 +1,13 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * An implementation of Countdown's Number round, in which the players
+ * are given 30 seconds to get the best word from 9 randomly chosen
+ * letters.
+ * @author Aidan O'Grady, Kristine Semjonova
+ *
+ */
 public class LettersRound extends Round{
 
 	/**
@@ -82,17 +89,10 @@ public class LettersRound extends Round{
 			}
 			switch (numberOfPlayers) {
 			case 1: // One player mode with timer
-				System.out.print("\nYou have 10s to input your solution: ");
-				answer1 = CountdownTimer.getAnswer(5);
-				System.out.println("You scored: " + scoreSolution(answer1));
-				players[0].updateScore(scoreSolution(answer1));
+				timerOnePlayer(answer1);
 				break;
 			case 2: // Two player mode with timer
-				System.out.print("\nPlayer 1: You have 10s to input your solution: ");
-				answer1 = CountdownTimer.getAnswer(5);
-				System.out.print("\nPlayer 2: You have 10s to input your solution: ");
-				answer2 = CountdownTimer.getAnswer(5);
-				declareWinner(answer1, answer2);
+				timerTwoPlayer(answer1, answer2);
 				break;
 			}
 		}
@@ -100,22 +100,49 @@ public class LettersRound extends Round{
 			System.out.println("Your letters are: " + letters);
 			switch (numberOfPlayers) {
 			case 1: // One player mode without timer
-				System.out.print("\nInput your solution: ");
-				answer1 = scanner.next();
-				System.out.println("You scored: " + scoreSolution(answer1));
-				players[0].updateScore(scoreSolution(answer1));
+				noTimerOnePlayer(answer1);
 				break;
 			case 2: // Two player mode without timer
-				System.out.print("\nPlayer 1: Input your solution: ");
-				answer1 = scanner.next();
-				System.out.print("\nPlayer 2: Input your solution: ");
-				answer2 = scanner.next();
-				declareWinner(answer1, answer2);
+				noTimerTwoPlayer(answer1, answer2);
 				break;
 			}
 		}
 		submitSolution(answer1, answer2);
 		revealSolution();	
+	}
+	
+	@Override
+	public void timerOnePlayer(String answer1) {
+		System.out.print("\nYou have 10s to input your solution: ");
+		answer1 = CountdownTimer.getAnswer(5);
+		System.out.println("You scored: " + scoreSolution(answer1));
+		players[0].updateScore(scoreSolution(answer1));		
+	}
+
+	@Override
+	public void timerTwoPlayer(String answer1, String answer2) {
+		System.out.print("\nPlayer 1: You have 10s to input your solution: ");
+		answer1 = CountdownTimer.getAnswer(5);
+		System.out.print("\nPlayer 2: You have 10s to input your solution: ");
+		answer2 = CountdownTimer.getAnswer(5);
+		declareWinner(answer1, answer2);
+	}
+
+	@Override
+	public void noTimerOnePlayer(String answer1) {
+		System.out.print("\nInput your solution: ");
+		answer1 = scanner.next();
+		System.out.println("You scored: " + scoreSolution(answer1));
+		players[0].updateScore(scoreSolution(answer1));
+	}
+
+	@Override
+	public void noTimerTwoPlayer(String answer1, String answer2) {
+		System.out.print("\nPlayer 1: Input your solution: ");
+		answer1 = scanner.next();
+		System.out.print("\nPlayer 2: Input your solution: ");
+		answer2 = scanner.next();
+		declareWinner(answer1, answer2);
 	}
 
 	/**

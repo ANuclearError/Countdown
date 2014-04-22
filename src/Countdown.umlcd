@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_mXI60MnpEeORSaKKF58-hQ">
+  <modelElement href="Countdown.uml#_mWcXQMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pPUB0MnpEeORSaKKF58-hQ" targetItem="_pPaIcMnpEeORSaKKF58-hQ" sourceItem="_pPN7MMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pPUo4cnpEeORSaKKF58-hQ" targetItem="_pPaIhcnpEeORSaKKF58-hQ" sourceItem="_pPUo4MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pPVP8cnpEeORSaKKF58-hQ" targetItem="_pPaIicnpEeORSaKKF58-hQ" sourceItem="_pPVP8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pPXsMMnpEeORSaKKF58-hQ" targetItem="_pPaIp8npEeORSaKKF58-hQ" sourceItem="_pPXFIMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pPZhYMnpEeORSaKKF58-hQ" sourceAnchor="309.0,226.0" targetAnchor="153.0,0.0" target="_pSFpCcnpEeORSaKKF58-hQ" source="_pPaIcMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1hf8MnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pPZhYcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1iHAMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pPZhYsnpEeORSaKKF58-hQ" text="">
+      <visualProperties xmi:id="_pmvqYMnpEeORSaKKF58-hQ" position="-49.0,-11.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pPZhY8npEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1hf8cnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmvDUMnpEeORSaKKF58-hQ" position="5.0,5.0"/>
+      <visibility xmi:id="_pPZhZMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pPZhZcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pPZhZsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="dictionary" navigable="true">
+      <modelElement href="Countdown.uml#_mzwlYMnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmvqYcnpEeORSaKKF58-hQ" position="-94.0,-54.0"/>
+      <visibility xmi:id="_pPZhZ8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pPZhaMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQBMcMnpEeORSaKKF58-hQ" targetItem="_pQgUoMnpEeORSaKKF58-hQ" sourceItem="_pP20YMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pQK9cMnpEeORSaKKF58-hQ" source="_pQgUoMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1iHAcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pQcqQsnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1iuEMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pQcDMMnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pQcqQMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1iHAsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQefccnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pQefcMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pQcqQcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="scanner" navigable="true">
+      <modelElement href="Countdown.uml#_mzzosMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQfGgMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQefcsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pQMLkMnpEeORSaKKF58-hQ" sourceAnchor="0.0,233.0" targetAnchor="306.0,83.0" target="_pSFpCcnpEeORSaKKF58-hQ" source="_pQgUoMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1iuEcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pQdRUsnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1jVIMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pQcqQ8npEeORSaKKF58-hQ" text="">
+      <visualProperties xmi:id="_pmwRccnpEeORSaKKF58-hQ" position="-311.0,-9.499999999999886"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pQdRUMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1iuEsnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmwRcMnpEeORSaKKF58-hQ" position="-21.0,1.5"/>
+      <visibility xmi:id="_pQfGg8npEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pQfGgsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pQdRUcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="dictionary" navigable="true">
+      <modelElement href="Countdown.uml#_mzzossnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmw4gMnpEeORSaKKF58-hQ" position="5.0,-50.500000000000114"/>
+      <visibility xmi:id="_pQfGhcnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQfGhMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pQNZsMnpEeORSaKKF58-hQ" sourceAnchor="136.0,0.0" targetAnchor="166.0,166.0" target="_pXH6AMnpEeORSaKKF58-hQ" source="_pQgUoMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1jVIcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pQd4Y8npEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1j8MMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pQd4YMnpEeORSaKKF58-hQ" text="">
+      <visualProperties xmi:id="_pmxfkcnpEeORSaKKF58-hQ" position="-49.0,111.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pQd4YcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1jVIsnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmxfkMnpEeORSaKKF58-hQ" position="-21.0,-54.0"/>
+      <visibility xmi:id="_pQftkcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pQftkMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pQd4YsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="players" navigable="true">
+      <modelElement href="Countdown.uml#_mz020cnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmyGoMnpEeORSaKKF58-hQ" position="6.5,5.0"/>
+      <visibility xmi:id="_pQftk8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQftksnpEeORSaKKF58-hQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQUHYcnpEeORSaKKF58-hQ" targetItem="_pQgUycnpEeORSaKKF58-hQ" sourceItem="_pQUHYMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQUuccnpEeORSaKKF58-hQ" targetItem="_pQgUzsnpEeORSaKKF58-hQ" sourceItem="_pQUucMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQVVgcnpEeORSaKKF58-hQ" targetItem="_pQgU0snpEeORSaKKF58-hQ" sourceItem="_pQVVgMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQV8kcnpEeORSaKKF58-hQ" targetItem="_pQgU1MnpEeORSaKKF58-hQ" sourceItem="_pQV8kMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQWjoMnpEeORSaKKF58-hQ" targetItem="_pQgU1snpEeORSaKKF58-hQ" sourceItem="_pQV8ksnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQWjosnpEeORSaKKF58-hQ" targetItem="_pQgU2MnpEeORSaKKF58-hQ" sourceItem="_pQWjocnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQXKscnpEeORSaKKF58-hQ" targetItem="_pQgU2snpEeORSaKKF58-hQ" sourceItem="_pQXKsMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQXxwMnpEeORSaKKF58-hQ" targetItem="_pQgU3snpEeORSaKKF58-hQ" sourceItem="_pQXKssnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQXxwsnpEeORSaKKF58-hQ" targetItem="_pQgU4MnpEeORSaKKF58-hQ" sourceItem="_pQXxwcnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQYY0cnpEeORSaKKF58-hQ" targetItem="_pQgU4snpEeORSaKKF58-hQ" sourceItem="_pQYY0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQYY08npEeORSaKKF58-hQ" targetItem="_pQgU5snpEeORSaKKF58-hQ" sourceItem="_pQYY0snpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQY_4cnpEeORSaKKF58-hQ" targetItem="_pQgU6MnpEeORSaKKF58-hQ" sourceItem="_pQY_4MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQY_48npEeORSaKKF58-hQ" targetItem="_pQgU6snpEeORSaKKF58-hQ" sourceItem="_pQY_4snpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQZm8cnpEeORSaKKF58-hQ" targetItem="_pQgU7MnpEeORSaKKF58-hQ" sourceItem="_pQZm8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQaOAMnpEeORSaKKF58-hQ" targetItem="_pQgU8MnpEeORSaKKF58-hQ" sourceItem="_pQZm8snpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQaOAsnpEeORSaKKF58-hQ" targetItem="_pQgU8snpEeORSaKKF58-hQ" sourceItem="_pQaOAcnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pRRwsMnpEeORSaKKF58-hQ" targetItem="_pRfMEMnpEeORSaKKF58-hQ" sourceItem="_pQ7ycMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pRXQQMnpEeORSaKKF58-hQ" targetItem="_pRfMLcnpEeORSaKKF58-hQ" sourceItem="_pRUM8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pRa6oMnpEeORSaKKF58-hQ" targetItem="_pRfMMcnpEeORSaKKF58-hQ" sourceItem="_pRX3UMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pRcv0cnpEeORSaKKF58-hQ" targetItem="_pRfMN8npEeORSaKKF58-hQ" sourceItem="_pRcv0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pRelAMnpEeORSaKKF58-hQ" source="_pRfMEMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1j8McnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pRelAcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1kjQMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pRelAsnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pRelA8npEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1j8MsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pRelBMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pRelBcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pRelBsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="timer" navigable="true">
+      <modelElement href="Countdown.uml#_mz36IsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pRelB8npEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRelCMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pR5bwMnpEeORSaKKF58-hQ" targetItem="_pSFpCcnpEeORSaKKF58-hQ" sourceItem="_pRt1kMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pR_iYMnpEeORSaKKF58-hQ" targetItem="_pSFpGcnpEeORSaKKF58-hQ" sourceItem="_pR8fEMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pSB-oMnpEeORSaKKF58-hQ" targetItem="_pSFpIMnpEeORSaKKF58-hQ" sourceItem="_pSAJcMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pSDMwcnpEeORSaKKF58-hQ" targetItem="_pSFpIsnpEeORSaKKF58-hQ" sourceItem="_pSDMwMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pSDz0MnpEeORSaKKF58-hQ" targetItem="_pSFpKMnpEeORSaKKF58-hQ" sourceItem="_pSDMwsnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pSFpAMnpEeORSaKKF58-hQ" source="_pSFpCcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1kjQcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pSFpAcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1lKUMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pSFpAsnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pSFpA8npEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1kjQsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSFpBMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pSFpBcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pSFpBsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="words" navigable="true">
+      <modelElement href="Countdown.uml#_mz6WYcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSFpB8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pSFpCMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pTFHgMnpEeORSaKKF58-hQ" targetItem="_pTPfkMnpEeORSaKKF58-hQ" sourceItem="_pSyMkMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTIK0MnpEeORSaKKF58-hQ" source="_pTPfkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1lKUcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pTORcsnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1lxYMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pTNqYMnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pTORcMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1lKUsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pTORdMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pTORc8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pTORccnpEeORSaKKF58-hQ" aggregationKind="NONE" name="highscores" navigable="true">
+      <modelElement href="Countdown.uml#_mz7kgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pTO4gcnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pTO4gMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTewIMnpEeORSaKKF58-hQ" sourceAnchor="323.0,346.0" targetAnchor="0.0,83.0" target="_pSFpCcnpEeORSaKKF58-hQ" source="_pUdnkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1mYccnpEeORSaKKF58-hQ"/>
+    <bendpoints xmi:id="_pmt1MMnpEeORSaKKF58-hQ" sourceY="217" targetX="-497"/>
+    <stereotypes xmi:id="_pT_GccnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1m_gMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pT-fYMnpEeORSaKKF58-hQ" text="">
+      <visualProperties xmi:id="_pmytsMnpEeORSaKKF58-hQ" position="263.0,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pT-fYcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1mYcsnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmyGocnpEeORSaKKF58-hQ" position="5.0,5.0"/>
+      <visibility xmi:id="_pUakQsnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pUakQcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pT_GcMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="dictionary" navigable="true">
+      <modelElement href="Countdown.uml#_mz_O4MnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmzUwMnpEeORSaKKF58-hQ" position="-89.0,1.5"/>
+      <visibility xmi:id="_pUakRMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUakQ8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTxEAMnpEeORSaKKF58-hQ" source="_pUdnkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1lxYcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pUakQMnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1mYcMnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pUZ9MMnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pUZ9McnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1lxYsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUbyYcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pUbyYMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pUZ9MsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="vowels" navigable="true">
+      <modelElement href="Countdown.uml#_mz-AwcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUcZccnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUcZcMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pT_GcsnpEeORSaKKF58-hQ" source="_pUdnkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1pbw8npEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pUbLUcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1qC0MnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pUakRsnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pUakR8npEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1pbxMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdAgMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pUcZdcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pUbLUMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="consonants" navigable="true">
+      <modelElement href="Countdown.uml#_m1JsgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdAgsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUdAgcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUFNEMnpEeORSaKKF58-hQ" targetItem="_pUdnqsnpEeORSaKKF58-hQ" sourceItem="_pUDX4MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pURaUMnpEeORSaKKF58-hQ" targetItem="_pUdnt8npEeORSaKKF58-hQ" sourceItem="_pUMh0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUT2kMnpEeORSaKKF58-hQ" targetItem="_pUdnvcnpEeORSaKKF58-hQ" sourceItem="_pUSBYMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUVEsMnpEeORSaKKF58-hQ" targetItem="_pUdnwcnpEeORSaKKF58-hQ" sourceItem="_pUUdoMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUVrwcnpEeORSaKKF58-hQ" targetItem="_pUdnxcnpEeORSaKKF58-hQ" sourceItem="_pUVrwMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUWS0cnpEeORSaKKF58-hQ" targetItem="_pUdny8npEeORSaKKF58-hQ" sourceItem="_pUWS0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUW54cnpEeORSaKKF58-hQ" targetItem="_pUdn08npEeORSaKKF58-hQ" sourceItem="_pUW54MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUYIAcnpEeORSaKKF58-hQ" targetItem="_pUeOs8npEeORSaKKF58-hQ" sourceItem="_pUYIAMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pUYvEcnpEeORSaKKF58-hQ" targetItem="_pUeOtcnpEeORSaKKF58-hQ" sourceItem="_pUYvEMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pU8IsMnpEeORSaKKF58-hQ" source="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1m_gcnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pVrIgcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1m_g8npEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pVqhcMnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pVqhccnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1m_gsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVtkwcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pVtkwMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pVrIgMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="chosenNumbers" navigable="true">
+      <modelElement href="Countdown.uml#_m0CSMMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVtkw8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVtkwsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pVPqsMnpEeORSaKKF58-hQ" source="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1nmkMnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pVrIhcnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1nmksnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pVrIgsnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pVrIg8npEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1nmkcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuL0cnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pVuL0MnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pVrIhMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="finalSolution" navigable="true">
+      <modelElement href="Countdown.uml#_m0EHYMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuL08npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVuL0snpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pVVKQMnpEeORSaKKF58-hQ" source="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1qC0cnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pVrvksnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1qp4MnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pVrIhsnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pVrvkMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1qC0snpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuL18npEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pVuL1snpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pVrvkcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="largeNumbers" navigable="true">
+      <modelElement href="Countdown.uml#_m1LhsMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuy4cnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVuy4MnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pVcfAMnpEeORSaKKF58-hQ" source="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1qp4cnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pVrvlsnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1rQ8MnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pVrvk8npEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pVrvlMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1qp4snpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuy5cnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pVuy5MnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pVrvlcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="smallNumbers" navigable="true">
+      <modelElement href="Countdown.uml#_m1MIwsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVuy58npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVuy5snpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVgJYMnpEeORSaKKF58-hQ" targetItem="_pVwoOcnpEeORSaKKF58-hQ" sourceItem="_pVdGEMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVhXgMnpEeORSaKKF58-hQ" targetItem="_pVwoO8npEeORSaKKF58-hQ" sourceItem="_pVgwcMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVh-kcnpEeORSaKKF58-hQ" targetItem="_pVwoP8npEeORSaKKF58-hQ" sourceItem="_pVh-kMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVilocnpEeORSaKKF58-hQ" targetItem="_pVwoRMnpEeORSaKKF58-hQ" sourceItem="_pViloMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVjzwMnpEeORSaKKF58-hQ" targetItem="_pVwoTsnpEeORSaKKF58-hQ" sourceItem="_pVjMsMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVka0cnpEeORSaKKF58-hQ" targetItem="_pVwoVMnpEeORSaKKF58-hQ" sourceItem="_pVka0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVmQAMnpEeORSaKKF58-hQ" targetItem="_pVwobMnpEeORSaKKF58-hQ" sourceItem="_pVlo8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVm3EcnpEeORSaKKF58-hQ" targetItem="_pVwodsnpEeORSaKKF58-hQ" sourceItem="_pVm3EMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVneIcnpEeORSaKKF58-hQ" targetItem="_pVwogcnpEeORSaKKF58-hQ" sourceItem="_pVneIMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pVoFMcnpEeORSaKKF58-hQ" targetItem="_pVwojMnpEeORSaKKF58-hQ" sourceItem="_pVoFMMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pWuRYMnpEeORSaKKF58-hQ" targetItem="_pXH6AMnpEeORSaKKF58-hQ" sourceItem="_pWXFAMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pW0YAMnpEeORSaKKF58-hQ" source="_pXH6AMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1oNoMnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pXGr4cnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1oNosnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pXGE0MnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pXGE0cnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1oNocnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pXHS8MnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pXGr4snpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pXGr4MnpEeORSaKKF58-hQ" aggregationKind="NONE" name="in" navigable="true">
+      <modelElement href="Countdown.uml#_m0PGgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pXHS8snpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pXHS8cnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pW9h8MnpEeORSaKKF58-hQ" targetItem="_pXH6EsnpEeORSaKKF58-hQ" sourceItem="_pW8T0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pXDokMnpEeORSaKKF58-hQ" targetItem="_pXH6GMnpEeORSaKKF58-hQ" sourceItem="_pXBzYMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pXFdwcnpEeORSaKKF58-hQ" targetItem="_pXH6HsnpEeORSaKKF58-hQ" sourceItem="_pXFdwMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pXfGYMnpEeORSaKKF58-hQ" sourceAnchor="436.0,123.0" targetAnchor="0.0,83.0" target="_pXH6AMnpEeORSaKKF58-hQ" source="_pbMhsMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1o0sMnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_paFuccnpEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1o0ssnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_paFHYMnpEeORSaKKF58-hQ" text="">
+      <visualProperties xmi:id="_pmz70MnpEeORSaKKF58-hQ" position="192.0,-9.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_paFHYcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1o0scnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pmzUwcnpEeORSaKKF58-hQ" position="5.0,-50.5"/>
+      <visibility xmi:id="_pbKFccnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbKFcMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_paFucMnpEeORSaKKF58-hQ" aggregationKind="NONE" name="players" navigable="true">
+      <modelElement href="Countdown.uml#_m0QUoMnpEeORSaKKF58-hQ"/>
+      <visualProperties xmi:id="_pm0i4MnpEeORSaKKF58-hQ" position="-69.5,1.5"/>
+      <visibility xmi:id="_pbKFc8npEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbKFcsnpEeORSaKKF58-hQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pZq3sMnpEeORSaKKF58-hQ" targetItem="_pbMhsMnpEeORSaKKF58-hQ" sourceItem="_pZTrUMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pZyzgMnpEeORSaKKF58-hQ" sourceAnchor="309.0,0.0" targetAnchor="218.0,246.0" superClass="_pbMhsMnpEeORSaKKF58-hQ" subClass="_pPaIcMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_myv4wMnpEeORSaKKF58-hQ"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pZ2d4MnpEeORSaKKF58-hQ" sourceAnchor="323.0,0.0" targetAnchor="218.0,246.0" superClass="_pbMhsMnpEeORSaKKF58-hQ" subClass="_pUdnkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mzAXcMnpEeORSaKKF58-hQ"/>
+    <bendpoints xmi:id="_pmucQMnpEeORSaKKF58-hQ" sourceY="-22" targetX="-650" targetY="33"/>
+    <bendpoints xmi:id="_pmucQcnpEeORSaKKF58-hQ" sourceX="650" sourceY="-22" targetY="33"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pZ4TEMnpEeORSaKKF58-hQ" sourceAnchor="342.0,0.0" targetAnchor="218.0,246.0" superClass="_pbMhsMnpEeORSaKKF58-hQ" subClass="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mzEB0MnpEeORSaKKF58-hQ"/>
+    <bendpoints xmi:id="_pmucQsnpEeORSaKKF58-hQ" sourceY="-23" targetX="676" targetY="33"/>
+    <bendpoints xmi:id="_pmucQ8npEeORSaKKF58-hQ" sourceX="-676" sourceY="-23" targetY="33"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_paFucsnpEeORSaKKF58-hQ" source="_pbMhsMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1pbwMnpEeORSaKKF58-hQ"/>
+    <stereotypes xmi:id="_pbKsg8npEeORSaKKF58-hQ" name="Reference">
+      <modelElement href="Countdown.uml#_m1pbwsnpEeORSaKKF58-hQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pbKsgMnpEeORSaKKF58-hQ" text=""/>
+    <sourceRole xmi:id="_pbKsgcnpEeORSaKKF58-hQ" aggregationKind="NONE" name="">
+      <modelElement href="Countdown.uml#_m1pbwcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbLTkcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbLTkMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pbKsgsnpEeORSaKKF58-hQ" aggregationKind="NONE" name="scanner" navigable="true">
+      <modelElement href="Countdown.uml#_m0Sw4MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbL6ocnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbL6oMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_paQtkMnpEeORSaKKF58-hQ" targetItem="_pbMhycnpEeORSaKKF58-hQ" sourceItem="_paPfcMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_paWNIMnpEeORSaKKF58-hQ" targetItem="_pbMhzcnpEeORSaKKF58-hQ" sourceItem="_paUX8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pacTwcnpEeORSaKKF58-hQ" targetItem="_pbMh08npEeORSaKKF58-hQ" sourceItem="_pacTwMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pac60cnpEeORSaKKF58-hQ" targetItem="_pbMh18npEeORSaKKF58-hQ" sourceItem="_pac60MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_padh4cnpEeORSaKKF58-hQ" targetItem="_pbMh3cnpEeORSaKKF58-hQ" sourceItem="_padh4MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_paeI8cnpEeORSaKKF58-hQ" targetItem="_pbMh48npEeORSaKKF58-hQ" sourceItem="_paeI8MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_paewAcnpEeORSaKKF58-hQ" targetItem="_pbMh5cnpEeORSaKKF58-hQ" sourceItem="_paewAMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pchXYMnpEeORSaKKF58-hQ" targetItem="_pcrIYMnpEeORSaKKF58-hQ" sourceItem="_pcLZIMnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0_H34MnpEeORSaKKF58-hQ" targetItem="_pVwBAMnpEeORSaKKF58-hQ" sourceItem="_0_HQ0MnpEeORSaKKF58-hQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_70jeoMnpEeORSaKKF58-hQ" targetItem="_pUdnkMnpEeORSaKKF58-hQ" sourceItem="_70LrMMnpEeORSaKKF58-hQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pPN7MMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pPUB0MnpEeORSaKKF58-hQ" text="An implementation of Countdown's Conundrum round, in which the players&#xA;are given a 9 letter anagram they must solve.&#xA;&#xA;@author Aidan O'Grady, Kristine Semjonova&#xA; *" item="_pPaIcMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1Dl4MnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pPUo4MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pPUo4cnpEeORSaKKF58-hQ" text="Chooses a random word from the dictionary to be used in the game.&#xA;&#x9; * @return The chosen word." item="_pPaIhcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1E0AcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pPVP8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pPVP8cnpEeORSaKKF58-hQ" text="Now that there is a chosen word, an anagram must be made form it.&#xA;&#x9; * @return The anagram displayed to the player." item="_pPaIicnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1E0AsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pPXFIMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pPXsMMnpEeORSaKKF58-hQ" text="Constructor&#xA;&#x9; * @param dict The dictionary to be used.&#xA;&#x9; * @param in Input scanner.&#xA;&#x9; * @param timer Whether or not a timer is to be used.&#xA;&#x9; * @param players A list of participating players." item="_pPaIp8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1E0AMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pP20YMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQBMcMnpEeORSaKKF58-hQ" text="The overall controller of Countdown, using the various menus&#xA;and game modes all wrapped together.&#xA;&#xA;@author Aidan O'Grady, Kristine Semjonova" item="_pQgUoMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1FbEMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQUHYMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQUHYcnpEeORSaKKF58-hQ" text="Constructor." item="_pQgUycnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpMMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQUucMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQUuccnpEeORSaKKF58-hQ" text="Allows the user to choose number of players in the game.&#xA;&#x9; * @return 1 or 2" item="_pQgUzsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpMcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQVVgMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQVVgcnpEeORSaKKF58-hQ" text="Used to print out a series of dashes to increase readability of output." item="_pQgU0snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpMsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQV8kMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQV8kcnpEeORSaKKF58-hQ" text="Displays the main menu of the game, and gets the user's next action." item="_pQgU1MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpM8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQV8ksnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQWjoMnpEeORSaKKF58-hQ" text="The sub-menu for playing a full game.&#xA;&#x9; * Allows the user to choose if they are starting a fresh new game, resuming an old game, or returning to previous screen." item="_pQgU1snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpNMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQWjocnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQWjosnpEeORSaKKF58-hQ" text="Starts a new game, resetting any variables used." item="_pQgU2MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1GpNcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQXKsMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQXKscnpEeORSaKKF58-hQ" text="Asks the user if they want the timer or not. Recursively calls itself if invalid answer.&#xA;&#x9; * &#xA;&#x9; * @return 1 The timer is enabled.&#xA;&#x9; * @return 0 The timer is disabled." item="_pQgU2snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQQMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQXKssnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQXxwMnpEeORSaKKF58-hQ" text="Allows the user to set the format of their full game, if it is to be deviated from default." item="_pQgU3snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQQcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQXxwcnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQXxwsnpEeORSaKKF58-hQ" text="Controls the playing of the full game." item="_pQgU4MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQQsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQYY0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQYY0cnpEeORSaKKF58-hQ" text="Starts the next round of the full game.&#xA;&#x9; * @return If the game should continue." item="_pQgU4snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQQ8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQYY0snpEeORSaKKF58-hQ" sourceConnectionVisual="_pQYY08npEeORSaKKF58-hQ" text="Saves an in progress game by writing its current status to a file." item="_pQgU5snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQRMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQY_4MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQY_4cnpEeORSaKKF58-hQ" text="Resumes a previously saved game, reading the information from a file." item="_pQgU6MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQRcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQY_4snpEeORSaKKF58-hQ" sourceConnectionVisual="_pQY_48npEeORSaKKF58-hQ" text="Menu for single round games, to allow choice of which round is to be played." item="_pQgU6snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQRsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQZm8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQZm8cnpEeORSaKKF58-hQ" text="Plays the game mode that is to be played, and returns the score.&#xA;&#x9; * @param game Determines which game is being played.&#xA;&#x9; * @return The score from that game." item="_pQgU7MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQR8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQZm8snpEeORSaKKF58-hQ" sourceConnectionVisual="_pQaOAMnpEeORSaKKF58-hQ" text="Allows the user to see the high scores." item="_pQgU8MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1HQSMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQaOAcnpEeORSaKKF58-hQ" sourceConnectionVisual="_pQaOAsnpEeORSaKKF58-hQ" text="Exits the game." item="_pQgU8snpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1H3UMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQ7ycMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pRRwsMnpEeORSaKKF58-hQ" text="An implementation of timer, used in rounds.&#xA;&#xA;@author Kristine Semjonova&#xA; *" item="_pRfMEMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1IeYMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pRUM8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pRXQQMnpEeORSaKKF58-hQ" text="Sets timer for specified amount of time.&#xA;&#x9; * &#xA;&#x9; * @param secs How many seconds timer ticks." item="_pRfMLcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1IeYcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pRX3UMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pRa6oMnpEeORSaKKF58-hQ" text="Sets timer for specified amount of time and prompts input.&#xA;&#x9; * &#xA;&#x9; * @param secs How many seconds timer ticks.&#xA;&#x9; *&#xA;&#x9; * @return Players input or empty String if user didn't type in before timeout." item="_pRfMMcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1IeYsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pRcv0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pRcv0cnpEeORSaKKF58-hQ" text="Checks whether time is out. If it is then timer is cancelled,&#xA;&#x9; *  otherwise number of seconds left is decreased by 1.&#xA;&#x9; * &#xA;&#x9; * @return Number of seconds left." item="_pRfMN8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1IeY8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pRt1kMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pR5bwMnpEeORSaKKF58-hQ" text="Class for the maintenance and use of a dictionary.&#xA;&#xA;@author Aidan O'Grady&#xA; *" item="_pSFpCcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1IeZMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pR8fEMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pR_iYMnpEeORSaKKF58-hQ" text="Constructor&#xA;&#x9; * &#xA;&#x9; * @param file The file to be used." item="_pSFpGcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1JFcMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pSAJcMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pSB-oMnpEeORSaKKF58-hQ" text="Adds every word in dictionary to words ArrayList." item="_pSFpIMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1JFccnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pSDMwMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pSDMwcnpEeORSaKKF58-hQ" text="Searches for a given word in words&#xA;&#x9; * &#xA;&#x9; * @param target The word to be searched.&#xA;&#x9; * @return Whether or not it is found." item="_pSFpIsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1JFcsnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_qwAYgMnpEeORSaKKF58-hQ" position="1125.0,953.0" size="200.0,150.0" visible="false"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pSDMwsnpEeORSaKKF58-hQ" sourceConnectionVisual="_pSDz0MnpEeORSaKKF58-hQ" text="Gets a random word from the dictionary.&#xA;&#x9; * &#xA;&#x9; * @return The returned word." item="_pSFpKMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1JFc8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pSyMkMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pTFHgMnpEeORSaKKF58-hQ" text="The storage and display of various scores, used as a leaderboard for the game.&#xA;&#xA;@author Aidan O'Grady&#xA; *" item="_pTPfkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1JFdMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUDX4MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUFNEMnpEeORSaKKF58-hQ" text="Reads a text file which shows the possible amount of times a letter can appear.&#xA;&#x9; * @param filename The name of the file to be read.&#xA;&#x9; * @return The list of characters to be drawn from later." item="_pUdnqsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1KTkcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUMh0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pURaUMnpEeORSaKKF58-hQ" text="Declares the winner of the round in a 2 player game.&#xA;&#x9; * @param answer1 Player one's answer&#xA;&#x9; * @param answer2 Player two's answer." item="_pUdnt8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1KTksnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUSBYMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUT2kMnpEeORSaKKF58-hQ" text="Asks a player how many vowels they would like in the game.&#xA;&#x9; * @return The chosen number." item="_pUdnvcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1KTk8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUUdoMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUVEsMnpEeORSaKKF58-hQ" text="Randomly generates a string based on 9 random letters, split by number of vowels.&#xA;&#x9; * @return The 9 letters." item="_pUdnwcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1KTlMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUVrwMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUVrwcnpEeORSaKKF58-hQ" text="Choses a random character from 1 of 2 lists.&#xA;&#x9; * @param option The list to be chosen from.&#xA;&#x9; * @return The random character." item="_pUdnxcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1K6oMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUWS0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUWS0cnpEeORSaKKF58-hQ" text="Removes a character from a string&#xA;&#x9; * @param string to remove from.&#xA;&#x9; * @param index The index of the character to be removed.&#xA;&#x9; * @return The string without removed character." item="_pUdny8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1K6ocnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUW54MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUW54cnpEeORSaKKF58-hQ" text="Checks whether or not the given word can be made from the letters.&#xA;&#x9; * @param answer The answer to be checked.&#xA;&#x9; * @return if possible or not." item="_pUdn08npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1K6osnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUYIAMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUYIAcnpEeORSaKKF58-hQ" text="Reveals the best solution the computer can come up with." item="_pUeOs8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1K6o8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pUYvEMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pUYvEcnpEeORSaKKF58-hQ" text="Dictionary&#xA;&#x9; * @param dict The dictionary to be used.&#xA;&#x9; * @param in Input scanner.&#xA;&#x9; * @param timer Whether or not a timer is to be used.&#xA;&#x9; * @param players A list of participating players." item="_pUeOtcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1KTkMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVdGEMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVgJYMnpEeORSaKKF58-hQ" text="Fills smallNumbers and largeNumbers with their pools." item="_pVwoOcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PMEsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVgwcMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVhXgMnpEeORSaKKF58-hQ" text="User specifies how many large numbers are to be in the problem.&#xA;&#x9; * @return 0-4 large numbers." item="_pVwoO8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PME8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVh-kMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVh-kcnpEeORSaKKF58-hQ" text="Generates a list of numbers based on the above method.&#xA;&#x9; * @return The list of numbers." item="_pVwoP8npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PzIMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pViloMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVilocnpEeORSaKKF58-hQ" text="Generates a target between 100 and 999 inclusive.&#xA;&#x9; * @return A randomly generate number." item="_pVwoRMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PzIsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVjMsMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVjzwMnpEeORSaKKF58-hQ" text="Declares the winner of the round in a 2 player game.&#xA;&#x9; * @param answer1 Player one's answer&#xA;&#x9; * @param answer2 Player two's answer." item="_pVwoTsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PzI8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVka0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVka0cnpEeORSaKKF58-hQ" text="User submits the answer they got.&#xA;&#x9; * @param numberOfPlayers How many people are playing." item="_pVwoVMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PzJMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVlo8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVmQAMnpEeORSaKKF58-hQ" text="Performs an arithmetic calculation&#xA;&#x9; * @param int1 Number 1&#xA;&#x9; * @param int2 Number 2&#xA;&#x9; * @param op The Calculation&#xA;&#x9; * @return The answer." item="_pVwobMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1QaMcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVm3EMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVm3EcnpEeORSaKKF58-hQ" text="Constructor. &#xA;&#x9; * @param in Input scanner.&#xA;&#x9; * @param timer Whether or not a timer is to be used.&#xA;&#x9; * @param players A list of participating players." item="_pVwodsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PMEcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVneIMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVneIcnpEeORSaKKF58-hQ" text="Creates a sublist given the parameters below.&#xA;&#x9; * @param list The list to generate numbers from&#xA;&#x9; * @param temp A temporary array containing added numbers&#xA;&#x9; * @param index How many numbers to be added.&#xA;&#x9; * @return The new list." item="_pVwogcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1PzIcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pVoFMMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pVoFMcnpEeORSaKKF58-hQ" text="A brute force solution for the computer to generate an optimal solution, if there is one.&#xA;&#x9; * @param numbers The numbers the computer has to work with.&#xA;&#x9; * @param progress_so_far The calculations it has made so far.&#xA;&#x9; * @param target_num The number the computer is aiming for.&#xA;&#x9; * @return" item="_pVwojMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1QaMMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pWXFAMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pWuRYMnpEeORSaKKF58-hQ" text="A class used to store information of someone playing Countdown.&#xA;@author Aidan O'Grady&#xA; *" item="_pXH6AMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoUMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pW8T0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pW9h8MnpEeORSaKKF58-hQ" text="Sets the player's name.&#xA;&#x9; * @param player&#xA;&#x9; * @return" item="_pXH6EsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoUsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pXBzYMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pXDokMnpEeORSaKKF58-hQ" text="Increases the value of the player's score by a given amount&#xA;&#x9; * @param score The increase in score&#xA;&#x9; * @return The new score." item="_pXH6GMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoU8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pXFdwMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pXFdwcnpEeORSaKKF58-hQ" text="Constructor&#xA;&#x9; * @param in The scanner to be passed.&#xA;&#x9; * @param player Is it player one or two?" item="_pXH6HsnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoUcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pZTrUMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pZq3sMnpEeORSaKKF58-hQ" text="This abstract class is used as the foundations of the various round types&#xA;that are featured in the game.&#xA;&#xA;@author Aidan O'Grady&#xA; *" item="_pbMhsMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoVMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_paPfcMnpEeORSaKKF58-hQ" sourceConnectionVisual="_paQtkMnpEeORSaKKF58-hQ" text="Sets whether or not a timer is to be implemented or not.&#xA;&#x9; * &#xA;&#x9; * @return If a timer is to be implemented." item="_pbMhycnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPYMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_paUX8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_paWNIMnpEeORSaKKF58-hQ" text="Submits player 1 and player 2's answers in their fields.&#xA;&#x9; * &#xA;&#x9; * @param solution1 Player One's solution&#xA;&#x9; * @param solution2 Player Two's solution." item="_pbMhzcnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPYcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pacTwMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pacTwcnpEeORSaKKF58-hQ" text="Handles the gameplay.&#xA;&#x9; * @param numberOfPlayers 1 or 2 players." item="_pbMh08npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPYsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pac60MnpEeORSaKKF58-hQ" sourceConnectionVisual="_pac60cnpEeORSaKKF58-hQ" text="Checks whether or not a given answer is correct.&#xA;&#x9; * @param answer The answer to be checked.&#xA;&#x9; * @return Is the answer correct?" item="_pbMh18npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPY8npEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_padh4MnpEeORSaKKF58-hQ" sourceConnectionVisual="_padh4cnpEeORSaKKF58-hQ" text="Scores the solution based on the round's system.&#xA;&#x9; * &#xA;&#x9; * @param answer The answer to be scored.&#xA;&#x9; * @return The score." item="_pbMh3cnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPZMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_paeI8MnpEeORSaKKF58-hQ" sourceConnectionVisual="_paeI8cnpEeORSaKKF58-hQ" text="Reveals the solution of that round." item="_pbMh48npEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPZcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_paewAMnpEeORSaKKF58-hQ" sourceConnectionVisual="_paewAcnpEeORSaKKF58-hQ" text="Constructor&#xA;&#x9; * &#xA;&#x9; * @param in Scanner used to control input.&#xA;&#x9; * @param timer&#x9;Indicates what the condition of the timer should be." item="_pbMh5cnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1RoVcnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pcLZIMnpEeORSaKKF58-hQ" sourceConnectionVisual="_pchXYMnpEeORSaKKF58-hQ" text="An object that is used to represent a final score from a game,&#xA;to be stored in the High Scores table.&#xA;@author Aidan O'Grady&#xA; *" item="_pcrIYMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_m1SPZsnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pPaIcMnpEeORSaKKF58-hQ" comments="_pPN7MMnpEeORSaKKF58-hQ" targetConnectionVisual="_pPUB0MnpEeORSaKKF58-hQ" name="Conundrum" associationsOut="_pPZhYMnpEeORSaKKF58-hQ" generalizations="_pZyzgMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mv5ZEMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pPaIccnpEeORSaKKF58-hQ" position="674.0,391.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pPaIcsnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pPaIc8npEeORSaKKF58-hQ" name="original">
+      <modelElement href="Countdown.uml#_mzvXQMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIdMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_mzv-UMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIdcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzv-UcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIdsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pPaId8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pPaIeMnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pPaIecnpEeORSaKKF58-hQ" name="dictionary">
+      <modelElement href="Countdown.uml#_mzwlYMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIesnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzxMcMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIe8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzxMcMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIfMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pPaIfcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pPaIfsnpEeORSaKKF58-hQ" name="Dictionary">
+        <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pPaIf8npEeORSaKKF58-hQ" name="anagram">
+      <modelElement href="Countdown.uml#_m1Dl4cnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIgMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1EM8MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIgcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1EM8cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIgsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pPaIg8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pPaIhMnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pPaIhcnpEeORSaKKF58-hQ" comments="_pPUo4MnpEeORSaKKF58-hQ" targetConnectionVisual="_pPUo4cnpEeORSaKKF58-hQ" name="generateOriginal">
+      <modelElement href="Countdown.uml#_mv71UMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pPaIhsnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pPaIh8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mv8cYMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIiMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pPaIicnpEeORSaKKF58-hQ" comments="_pPVP8MnpEeORSaKKF58-hQ" targetConnectionVisual="_pPVP8cnpEeORSaKKF58-hQ" name="generateAnagram">
+      <modelElement href="Countdown.uml#_mv8cYcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pPaIisnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pPaIi8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mv9DcMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIjMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pPaIjcnpEeORSaKKF58-hQ" name="playGame">
+      <modelElement href="Countdown.uml#_mv9DccnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIjsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mv9qgMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIj8npEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mv-RkMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIkMnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pPaIkcnpEeORSaKKF58-hQ" name="numberOfPlayers">
+        <modelElement href="Countdown.uml#_mv9DcsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIksnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pPaIk8npEeORSaKKF58-hQ" name="checkSolution">
+      <modelElement href="Countdown.uml#_mv-4oMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIlMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mv-4o8npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIlcnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mv_fsMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIlsnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pPaIl8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mv-4osnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaImMnpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pPaImcnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mv-4ocnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaImsnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pPaIm8npEeORSaKKF58-hQ" name="scoreSolution">
+      <modelElement href="Countdown.uml#_mv_fssnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaInMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwAGwcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIncnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwAGwsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaInsnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pPaIn8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwAGwMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIoMnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pPaIocnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mv_fs8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIosnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pPaIo8npEeORSaKKF58-hQ" name="revealSolution">
+      <modelElement href="Countdown.uml#_mwAt0MnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pPaIpMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwAt0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPaIpcnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwAt0snpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pPaIpsnpEeORSaKKF58-hQ" label="+"/>
+    </operations>
+    <operations xmi:id="_pPaIp8npEeORSaKKF58-hQ" comments="_pPXFIMnpEeORSaKKF58-hQ" targetConnectionVisual="_pPXsMMnpEeORSaKKF58-hQ" name="Conundrum">
+      <modelElement href="Countdown.uml#_mzUggMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pPaIqMnpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pPaIqcnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pPaIqsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzVHlsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIq8npEeORSaKKF58-hQ" name="Conundrum">
+          <modelElement href="Countdown.uml#_mv5ZEMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pPaIrMnpEeORSaKKF58-hQ" name="dict">
+        <modelElement href="Countdown.uml#_mzVHkMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIrcnpEeORSaKKF58-hQ" name="Dictionary">
+          <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pPaIrsnpEeORSaKKF58-hQ" name="in">
+        <modelElement href="Countdown.uml#_mzVHkcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIr8npEeORSaKKF58-hQ" name="Scanner">
+          <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pPaIsMnpEeORSaKKF58-hQ" name="timer">
+        <modelElement href="Countdown.uml#_mzVHksnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIscnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pPaIssnpEeORSaKKF58-hQ" name="players">
+        <modelElement href="Countdown.uml#_mzVHk8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pPaIs8npEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pQgUoMnpEeORSaKKF58-hQ" comments="_pP20YMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQBMcMnpEeORSaKKF58-hQ" name="Countdown" associationsOut="_pQK9cMnpEeORSaKKF58-hQ _pQMLkMnpEeORSaKKF58-hQ _pQNZsMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwDxIMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pQgUocnpEeORSaKKF58-hQ" position="2030.0,661.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pQgUosnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pQgUo8npEeORSaKKF58-hQ" name="format">
+      <modelElement href="Countdown.uml#_mzyakMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUpMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzyakcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUpcnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUpsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUp8npEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUqMnpEeORSaKKF58-hQ" name="round">
+      <modelElement href="Countdown.uml#_mzyaksnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUqcnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_mzzBoMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQgUqsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzzBocnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUq8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUrMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUrcnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUrsnpEeORSaKKF58-hQ" name="scanner">
+      <modelElement href="Countdown.uml#_mzzosMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUr8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzzoscnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQfGgcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzzoscnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUsMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUscnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUssnpEeORSaKKF58-hQ" name="Scanner">
+        <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUs8npEeORSaKKF58-hQ" name="dictionary">
+      <modelElement href="Countdown.uml#_mzzossnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUtMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz0PwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQfGhsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz0PwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUtcnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUtsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUt8npEeORSaKKF58-hQ" name="Dictionary">
+        <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUuMnpEeORSaKKF58-hQ" name="numberOfPlayers" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz0PwcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUucnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz020MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUusnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pQgUu8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUvMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUvcnpEeORSaKKF58-hQ" name="players">
+      <modelElement href="Countdown.uml#_mz020cnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUvsnpEeORSaKKF58-hQ" name="Array">
+        <modelElement href="Countdown.uml#_mz0208npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQgUv8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz1d4MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQftlMnpEeORSaKKF58-hQ" name="Array">
+        <modelElement href="Countdown.uml#_mz0208npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQftlcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz1d4MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUwMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUwcnpEeORSaKKF58-hQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_pQgUwsnpEeORSaKKF58-hQ" name="Player">
+        <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pQgUw8npEeORSaKKF58-hQ" name="timer">
+      <modelElement href="Countdown.uml#_m1GCIMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pQgUxMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1GCIcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pQgUxcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1GCIsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pQgUxsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pQgUx8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pQgUyMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pQgUycnpEeORSaKKF58-hQ" comments="_pQUHYMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQUHYcnpEeORSaKKF58-hQ" name="Countdown">
+      <modelElement href="Countdown.uml#_mwFmUMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pQgUysnpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pQgUy8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pQgUzMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwFmU8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pQgUzcnpEeORSaKKF58-hQ" name="Countdown">
+          <modelElement href="Countdown.uml#_mwDxIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pQgUzsnpEeORSaKKF58-hQ" comments="_pQUucMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQUuccnpEeORSaKKF58-hQ" name="getNumberOfPlayers">
+      <modelElement href="Countdown.uml#_mwFmVMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgUz8npEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pQgU0MnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwFmVcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pQgU0cnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pQgU0snpEeORSaKKF58-hQ" comments="_pQVVgMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQVVgcnpEeORSaKKF58-hQ" name="lineBreak">
+      <modelElement href="Countdown.uml#_mwGNYMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU08npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU1MnpEeORSaKKF58-hQ" comments="_pQV8kMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQV8kcnpEeORSaKKF58-hQ" name="displayMenu">
+      <modelElement href="Countdown.uml#_mwGNYcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU1cnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU1snpEeORSaKKF58-hQ" comments="_pQV8ksnpEeORSaKKF58-hQ" targetConnectionVisual="_pQWjoMnpEeORSaKKF58-hQ" name="fullGameMenu">
+      <modelElement href="Countdown.uml#_mwG0cMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU18npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU2MnpEeORSaKKF58-hQ" comments="_pQWjocnpEeORSaKKF58-hQ" targetConnectionVisual="_pQWjosnpEeORSaKKF58-hQ" name="startNewGame">
+      <modelElement href="Countdown.uml#_mwG0ccnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU2cnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU2snpEeORSaKKF58-hQ" comments="_pQXKsMnpEeORSaKKF58-hQ" targetConnectionVisual="_pQXKscnpEeORSaKKF58-hQ" name="setTimer">
+      <modelElement href="Countdown.uml#_mwG0csnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU28npEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pQgU3MnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwG0c8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pQgU3cnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pQgU3snpEeORSaKKF58-hQ" comments="_pQXKssnpEeORSaKKF58-hQ" targetConnectionVisual="_pQXxwMnpEeORSaKKF58-hQ" name="setFormat">
+      <modelElement href="Countdown.uml#_mwHbgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU38npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU4MnpEeORSaKKF58-hQ" comments="_pQXxwcnpEeORSaKKF58-hQ" targetConnectionVisual="_pQXxwsnpEeORSaKKF58-hQ" name="playFullGame">
+      <modelElement href="Countdown.uml#_mwHbgcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU4cnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU4snpEeORSaKKF58-hQ" comments="_pQYY0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pQYY0cnpEeORSaKKF58-hQ" name="nextRound">
+      <modelElement href="Countdown.uml#_mwHbgsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU48npEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pQgU5MnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwICkMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pQgU5cnpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pQgU5snpEeORSaKKF58-hQ" comments="_pQYY0snpEeORSaKKF58-hQ" targetConnectionVisual="_pQYY08npEeORSaKKF58-hQ" name="saveGame">
+      <modelElement href="Countdown.uml#_mwICkcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU58npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU6MnpEeORSaKKF58-hQ" comments="_pQY_4MnpEeORSaKKF58-hQ" targetConnectionVisual="_pQY_4cnpEeORSaKKF58-hQ" name="resumeGame">
+      <modelElement href="Countdown.uml#_mwICksnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU6cnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU6snpEeORSaKKF58-hQ" comments="_pQY_4snpEeORSaKKF58-hQ" targetConnectionVisual="_pQY_48npEeORSaKKF58-hQ" name="singleRoundMenu">
+      <modelElement href="Countdown.uml#_mwICk8npEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU68npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU7MnpEeORSaKKF58-hQ" comments="_pQZm8MnpEeORSaKKF58-hQ" targetConnectionVisual="_pQZm8cnpEeORSaKKF58-hQ" name="playSingleRound">
+      <modelElement href="Countdown.uml#_mwIpoMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU7cnpEeORSaKKF58-hQ" label="-"/>
+      <parameters xmi:id="_pQgU7snpEeORSaKKF58-hQ" name="game">
+        <modelElement href="Countdown.uml#_mwIpocnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pQgU78npEeORSaKKF58-hQ" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pQgU8MnpEeORSaKKF58-hQ" comments="_pQZm8snpEeORSaKKF58-hQ" targetConnectionVisual="_pQaOAMnpEeORSaKKF58-hQ" name="viewHighScores">
+      <modelElement href="Countdown.uml#_mwIposnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU8cnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pQgU8snpEeORSaKKF58-hQ" comments="_pQaOAcnpEeORSaKKF58-hQ" targetConnectionVisual="_pQaOAsnpEeORSaKKF58-hQ" name="exitGame">
+      <modelElement href="Countdown.uml#_mwJQsMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pQgU88npEeORSaKKF58-hQ" label="-"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pRfMEMnpEeORSaKKF58-hQ" comments="_pQ7ycMnpEeORSaKKF58-hQ" targetConnectionVisual="_pRRwsMnpEeORSaKKF58-hQ" name="CountdownTimer" associationsOut="_pRelAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwMUAMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pRfMEcnpEeORSaKKF58-hQ" position="422.0,1194.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pRfMEsnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pRfME8npEeORSaKKF58-hQ" name="interval" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz2sAMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pRfMFMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz3TEMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pRfMFcnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRfMFsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pRfMF8npEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRfMGMnpEeORSaKKF58-hQ" name="str" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz36IMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pRfMGcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz36IcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pRfMGsnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRfMG8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pRfMHMnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRfMHcnpEeORSaKKF58-hQ" name="timer" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz36IsnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pRfMHsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz4hMMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pRfMH8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz4hMMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pRfMIMnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRfMIcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pRfMIsnpEeORSaKKF58-hQ" name="Timer">
+        <modelElement href="Countdown.uml#_my5pwMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRfMI8npEeORSaKKF58-hQ" name="input" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz4hMcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pRfMJMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz5IQMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pRfMJcnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRfMJsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pRfMJ8npEeORSaKKF58-hQ" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRfMKMnpEeORSaKKF58-hQ" name="timeout" staticAttribute="true">
+      <modelElement href="Countdown.uml#_mz5IQcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pRfMKcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz5IQsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pRfMKsnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pRfMK8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pRfMLMnpEeORSaKKF58-hQ" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pRfMLcnpEeORSaKKF58-hQ" comments="_pRUM8MnpEeORSaKKF58-hQ" targetConnectionVisual="_pRXQQMnpEeORSaKKF58-hQ" name="setTimer" staticOperation="true">
+      <modelElement href="Countdown.uml#_mwNiIMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pRfMLsnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pRfML8npEeORSaKKF58-hQ" name="secs">
+        <modelElement href="Countdown.uml#_mwNiIcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pRfMMMnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pRfMMcnpEeORSaKKF58-hQ" comments="_pRX3UMnpEeORSaKKF58-hQ" targetConnectionVisual="_pRa6oMnpEeORSaKKF58-hQ" name="getAnswer" staticOperation="true">
+      <modelElement href="Countdown.uml#_mwOJMMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pRfMMsnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pRfMM8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwOJMsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pRfMNMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pRfMNcnpEeORSaKKF58-hQ" name="secs">
+        <modelElement href="Countdown.uml#_mwOJMcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pRfMNsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pRfMN8npEeORSaKKF58-hQ" comments="_pRcv0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pRcv0cnpEeORSaKKF58-hQ" name="setInterval" staticOperation="true">
+      <modelElement href="Countdown.uml#_mwOJM8npEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pRfMOMnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pRfMOcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwOwQMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pRfMOsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pSFpCcnpEeORSaKKF58-hQ" comments="_pRt1kMnpEeORSaKKF58-hQ" targetConnectionVisual="_pR5bwMnpEeORSaKKF58-hQ" name="Dictionary" associationsIn="_pPZhYMnpEeORSaKKF58-hQ _pQMLkMnpEeORSaKKF58-hQ _pTewIMnpEeORSaKKF58-hQ" associationsOut="_pSFpAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pSFpCsnpEeORSaKKF58-hQ" position="830.0,811.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pSFpC8npEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pSFpDMnpEeORSaKKF58-hQ" name="filename">
+      <modelElement href="Countdown.uml#_mz5vUMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pSFpDcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz6WYMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pSFpDsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pSFpD8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pSFpEMnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pSFpEcnpEeORSaKKF58-hQ" name="words">
+      <modelElement href="Countdown.uml#_mz6WYcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pSFpEsnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz69cMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSFpE8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz69ccnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSFpFMnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz69cMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSFpFcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz69ccnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pSFpFsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pSFpF8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pSFpGMnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pSFpGcnpEeORSaKKF58-hQ" comments="_pR8fEMnpEeORSaKKF58-hQ" targetConnectionVisual="_pR_iYMnpEeORSaKKF58-hQ" name="Dictionary">
+      <modelElement href="Countdown.uml#_mwRMgMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pSFpGsnpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pSFpG8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pSFpHMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwRMhMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSFpHcnpEeORSaKKF58-hQ" name="Dictionary">
+          <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pSFpHsnpEeORSaKKF58-hQ" name="file">
+        <modelElement href="Countdown.uml#_mwRMgcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSFpH8npEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pSFpIMnpEeORSaKKF58-hQ" comments="_pSAJcMnpEeORSaKKF58-hQ" targetConnectionVisual="_pSB-oMnpEeORSaKKF58-hQ" name="readDictionary">
+      <modelElement href="Countdown.uml#_mwRzkMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSFpIcnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pSFpIsnpEeORSaKKF58-hQ" comments="_pSDMwMnpEeORSaKKF58-hQ" targetConnectionVisual="_pSDMwcnpEeORSaKKF58-hQ" name="findWord">
+      <modelElement href="Countdown.uml#_mwRzkcnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSFpI8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pSFpJMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwSaoMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSFpJcnpEeORSaKKF58-hQ" name="Boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pSFpJsnpEeORSaKKF58-hQ" name="target">
+        <modelElement href="Countdown.uml#_mwRzksnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSFpJ8npEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pSFpKMnpEeORSaKKF58-hQ" comments="_pSDMwsnpEeORSaKKF58-hQ" targetConnectionVisual="_pSDz0MnpEeORSaKKF58-hQ" name="getRandomWord">
+      <modelElement href="Countdown.uml#_mwSaocnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSFpKcnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pSFpKsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwSaosnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSFpK8npEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pSWuwMnpEeORSaKKF58-hQ" name="Driver">
+    <modelElement href="Countdown.uml#_mwTowMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pSWuwcnpEeORSaKKF58-hQ" position="1124.0,1189.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pSWuwsnpEeORSaKKF58-hQ" label="+"/>
+    <operations xmi:id="_pSWuw8npEeORSaKKF58-hQ" name="main" staticOperation="true">
+      <modelElement href="Countdown.uml#_mwUP0MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pSWuxMnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pSWuxcnpEeORSaKKF58-hQ" name="args">
+        <modelElement href="Countdown.uml#_mwUP0cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pSWuxsnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pTPfkMnpEeORSaKKF58-hQ" comments="_pSyMkMnpEeORSaKKF58-hQ" targetConnectionVisual="_pTFHgMnpEeORSaKKF58-hQ" name="HighScores" associationsOut="_pTIK0MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwU24MnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pTPfkcnpEeORSaKKF58-hQ" position="753.0,1198.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pTPfksnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pTPfk8npEeORSaKKF58-hQ" name="highscores">
+      <modelElement href="Countdown.uml#_mz7kgMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pTPflMnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz8LkMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pTPflcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz8yoMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pTO4gsnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz8LkMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pTO4g8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz8yoMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pTPflsnpEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pTPfl8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pTPfmMnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pTPfmcnpEeORSaKKF58-hQ" name="filename">
+      <modelElement href="Countdown.uml#_mz8yocnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pTPfmsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz9ZsMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pTPfm8npEeORSaKKF58-hQ" label="~"/>
+      <cardinality xmi:id="_pTPfnMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pTPfncnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pTPfnsnpEeORSaKKF58-hQ" name="HighScores">
+      <modelElement href="Countdown.uml#_mwVd8MnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pTPfn8npEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pTPfoMnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pTPfocnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwWFA8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pTPfosnpEeORSaKKF58-hQ" name="HighScores">
+          <modelElement href="Countdown.uml#_mwU24MnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pTPfo8npEeORSaKKF58-hQ" name="file">
+        <modelElement href="Countdown.uml#_mwWFAMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pTPfpMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pTPfpcnpEeORSaKKF58-hQ" name="readHighScores">
+      <modelElement href="Countdown.uml#_mwWFBMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pTPfpsnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pTPfp8npEeORSaKKF58-hQ" name="viewHighScores">
+      <modelElement href="Countdown.uml#_mwWsEMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pTPfqMnpEeORSaKKF58-hQ" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pUdnkMnpEeORSaKKF58-hQ" comments="_70LrMMnpEeORSaKKF58-hQ" targetConnectionVisual="_70jeoMnpEeORSaKKF58-hQ" name="LettersRound" associationsOut="_pTewIMnpEeORSaKKF58-hQ _pTxEAMnpEeORSaKKF58-hQ _pT_GcsnpEeORSaKKF58-hQ" generalizations="_pZ2d4MnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwX6MMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pUdnkcnpEeORSaKKF58-hQ" position="10.0,331.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pUdnksnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pUdnk8npEeORSaKKF58-hQ" name="letters">
+      <modelElement href="Countdown.uml#_mz9ZscnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnlMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz-AwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdnlcnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUdnlsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pUdnl8npEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pUdnmMnpEeORSaKKF58-hQ" name="vowels">
+      <modelElement href="Countdown.uml#_mz-AwcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnmcnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz-n0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdnmsnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_mz-n0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdnm8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz-n0snpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUcZcsnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mz-n0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUcZc8npEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_mz-n0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUcZdMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz-n0snpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdnnMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUdnncnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pUdnnsnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pUdnn8npEeORSaKKF58-hQ" name="dictionary">
+      <modelElement href="Countdown.uml#_mz_O4MnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnoMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz_18MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUakRcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mz_18MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdnocnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUdnosnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pUdno8npEeORSaKKF58-hQ" name="Dictionary">
+        <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pUdnpMnpEeORSaKKF58-hQ" name="consonants">
+      <modelElement href="Countdown.uml#_m1JsgMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnpcnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1JsgcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdnpsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1JsgsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdAg8npEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1JsgcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdAhMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1JsgsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdnp8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pUdnqMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pUdnqcnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pUdnqsnpEeORSaKKF58-hQ" comments="_pUDX4MnpEeORSaKKF58-hQ" targetConnectionVisual="_pUFNEMnpEeORSaKKF58-hQ" name="readPool">
+      <modelElement href="Countdown.uml#_mwZvYMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnq8npEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mwaWcMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdnrMnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pUdnrcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzb1QcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnrsnpEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUdnr8npEeORSaKKF58-hQ" name="filename">
+        <modelElement href="Countdown.uml#_mwZvYcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnsMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUdnscnpEeORSaKKF58-hQ" name="playGame">
+      <modelElement href="Countdown.uml#_mwa9gMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUdnssnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwa9gsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUdns8npEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwbkkMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUdntMnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pUdntcnpEeORSaKKF58-hQ" name="numberOfPlayers">
+        <modelElement href="Countdown.uml#_mwa9gcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdntsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUdnt8npEeORSaKKF58-hQ" comments="_pUMh0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pURaUMnpEeORSaKKF58-hQ" name="declareWinner">
+      <modelElement href="Countdown.uml#_mwbkksnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdnuMnpEeORSaKKF58-hQ" label="-"/>
+      <parameters xmi:id="_pUdnucnpEeORSaKKF58-hQ" name="answer1">
+        <modelElement href="Countdown.uml#_mwbkk8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnusnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pUdnu8npEeORSaKKF58-hQ" name="answer2">
+        <modelElement href="Countdown.uml#_mwcLoMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnvMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUdnvcnpEeORSaKKF58-hQ" comments="_pUSBYMnpEeORSaKKF58-hQ" targetConnectionVisual="_pUT2kMnpEeORSaKKF58-hQ" name="getNoOfVowels">
+      <modelElement href="Countdown.uml#_mwcLocnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdnvsnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pUdnv8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwcLosnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnwMnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pUdnwcnpEeORSaKKF58-hQ" comments="_pUUdoMnpEeORSaKKF58-hQ" targetConnectionVisual="_pUVEsMnpEeORSaKKF58-hQ" name="generateLetters">
+      <modelElement href="Countdown.uml#_mwcysMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdnwsnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pUdnw8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwcyscnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnxMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pUdnxcnpEeORSaKKF58-hQ" comments="_pUVrwMnpEeORSaKKF58-hQ" targetConnectionVisual="_pUVrwcnpEeORSaKKF58-hQ" name="dealLetter">
+      <modelElement href="Countdown.uml#_mwdZwMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdnxsnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pUdnx8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwdZwsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnyMnpEeORSaKKF58-hQ" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUdnycnpEeORSaKKF58-hQ" name="option">
+        <modelElement href="Countdown.uml#_mwdZwcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnysnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUdny8npEeORSaKKF58-hQ" comments="_pUWS0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pUWS0cnpEeORSaKKF58-hQ" name="removeChar">
+      <modelElement href="Countdown.uml#_mweA0MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdnzMnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pUdnzcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mweA08npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdnzsnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUdnz8npEeORSaKKF58-hQ" name="string">
+        <modelElement href="Countdown.uml#_mweA0cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdn0MnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pUdn0cnpEeORSaKKF58-hQ" name="index">
+        <modelElement href="Countdown.uml#_mweA0snpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUdn0snpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUdn08npEeORSaKKF58-hQ" comments="_pUW54MnpEeORSaKKF58-hQ" targetConnectionVisual="_pUW54cnpEeORSaKKF58-hQ" name="checkIfValid">
+      <modelElement href="Countdown.uml#_mwen4MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUdn1MnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pUdn1cnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwen4snpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOoMnpEeORSaKKF58-hQ" name="Boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUeOocnpEeORSaKKF58-hQ" name="answer">
+        <modelElement href="Countdown.uml#_mwen4cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOosnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUeOo8npEeORSaKKF58-hQ" name="checkSolution">
+      <modelElement href="Countdown.uml#_mwfO8MnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUeOpMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwf2AMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUeOpcnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwf2AcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUeOpsnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pUeOp8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwfO8snpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOqMnpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUeOqcnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mwfO8cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOqsnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUeOq8npEeORSaKKF58-hQ" name="scoreSolution">
+      <modelElement href="Countdown.uml#_mwgdEMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pUeOrMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwgdE8npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pUeOrcnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwhEIMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pUeOrsnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pUeOr8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwgdEsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOsMnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUeOscnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mwgdEcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOssnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pUeOs8npEeORSaKKF58-hQ" comments="_pUYIAMnpEeORSaKKF58-hQ" targetConnectionVisual="_pUYIAcnpEeORSaKKF58-hQ" name="revealSolution">
+      <modelElement href="Countdown.uml#_mwhEIsnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pUeOtMnpEeORSaKKF58-hQ" label="+"/>
+    </operations>
+    <operations xmi:id="_pUeOtcnpEeORSaKKF58-hQ" comments="_pUYvEMnpEeORSaKKF58-hQ" targetConnectionVisual="_pUYvEcnpEeORSaKKF58-hQ" name="LettersRound">
+      <modelElement href="Countdown.uml#_mzanIMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pUeOtsnpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pUeOt8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pUeOuMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzbONMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOucnpEeORSaKKF58-hQ" name="LettersRound">
+          <modelElement href="Countdown.uml#_mwX6MMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUeOusnpEeORSaKKF58-hQ" name="dict">
+        <modelElement href="Countdown.uml#_mzanIcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOu8npEeORSaKKF58-hQ" name="Dictionary">
+          <modelElement href="Countdown.uml#_mwP-YMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pUeOvMnpEeORSaKKF58-hQ" name="in">
+        <modelElement href="Countdown.uml#_mzanIsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOvcnpEeORSaKKF58-hQ" name="Scanner">
+          <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pUeOvsnpEeORSaKKF58-hQ" name="timer">
+        <modelElement href="Countdown.uml#_mzbOMMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOv8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pUeOwMnpEeORSaKKF58-hQ" name="players">
+        <modelElement href="Countdown.uml#_mzbOMcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pUeOwcnpEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pVwBAMnpEeORSaKKF58-hQ" comments="_0_HQ0MnpEeORSaKKF58-hQ" targetConnectionVisual="_0_H34MnpEeORSaKKF58-hQ" name="NumbersRound" associationsOut="_pU8IsMnpEeORSaKKF58-hQ _pVPqsMnpEeORSaKKF58-hQ _pVVKQMnpEeORSaKKF58-hQ _pVcfAMnpEeORSaKKF58-hQ" generalizations="_pZ4TEMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mwkugMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pVwBAcnpEeORSaKKF58-hQ" position="1317.0,332.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pVwBAsnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pVwBA8npEeORSaKKF58-hQ" name="chosenNumbers">
+      <modelElement href="Countdown.uml#_m0CSMMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwBBMnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_m0C5QMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwBBcnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m0DgUMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwBBsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0DgUcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVtkxMnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_m0C5QMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVtkxcnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m0DgUMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVtkxsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0DgUcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwBB8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwBCMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwBCcnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwBCsnpEeORSaKKF58-hQ" name="finalSolution">
+      <modelElement href="Countdown.uml#_m0EHYMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwBC8npEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_m0EucMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwBDMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0FVgMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVuL1MnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_m0EucMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVuL1cnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0FVgMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwBDcnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwBDsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwBD8npEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwBEMnpEeORSaKKF58-hQ" name="target">
+      <modelElement href="Countdown.uml#_m0F8kMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwBEcnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m0F8kcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwBEsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0F8ksnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwBE8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwBFMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwBFcnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoEMnpEeORSaKKF58-hQ" name="isSolution">
+      <modelElement href="Countdown.uml#_m0HxwMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoEcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0IY0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoEsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoE8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoFMnpEeORSaKKF58-hQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoFcnpEeORSaKKF58-hQ" name="largeNumbers">
+      <modelElement href="Countdown.uml#_m1LhsMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoFsnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1MIwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoF8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1MIwcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVuy4snpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1MIwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVuy48npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1MIwcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoGMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoGcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoGsnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoG8npEeORSaKKF58-hQ" name="smallNumbers">
+      <modelElement href="Countdown.uml#_m1MIwsnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoHMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1Mv0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoHcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1Mv0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVvZ8MnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1Mv0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVvZ8cnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1Mv0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoHsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoH8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoIMnpEeORSaKKF58-hQ" name="ArrayList">
+        <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoIcnpEeORSaKKF58-hQ" name="result">
+      <modelElement href="Countdown.uml#_m1NW4MnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoIsnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1NW4cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoI8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1NW4snpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoJMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoJcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoJsnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoJ8npEeORSaKKF58-hQ" name="calculations">
+      <modelElement href="Countdown.uml#_m1NW48npEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoKMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1N98MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoKcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1N98cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoKsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoK8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoLMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoLcnpEeORSaKKF58-hQ" name="answer1">
+      <modelElement href="Countdown.uml#_m1N98snpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoLsnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1OlAMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoL8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1OlAcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoMMnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoMcnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoMsnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pVwoM8npEeORSaKKF58-hQ" name="answer2">
+      <modelElement href="Countdown.uml#_m1OlAsnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoNMnpEeORSaKKF58-hQ" name="MultiDeclaration">
+        <modelElement href="Countdown.uml#_m1OlA8npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoNcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m1PMEMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoNsnpEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pVwoN8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pVwoOMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pVwoOcnpEeORSaKKF58-hQ" comments="_pVdGEMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVgJYMnpEeORSaKKF58-hQ" name="fillArrays">
+      <modelElement href="Countdown.uml#_mwmjsMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwoOsnpEeORSaKKF58-hQ" label="-"/>
+    </operations>
+    <operations xmi:id="_pVwoO8npEeORSaKKF58-hQ" comments="_pVgwcMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVhXgMnpEeORSaKKF58-hQ" name="getLargeNumbers">
+      <modelElement href="Countdown.uml#_mwnKwMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwoPMnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwoPcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwnKwcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoPsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pVwoP8npEeORSaKKF58-hQ" comments="_pVh-kMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVh-kcnpEeORSaKKF58-hQ" name="generateNumbers">
+      <modelElement href="Countdown.uml#_mwnKwsnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoQMnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mwnx0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoQcnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwoQsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mze4kMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoQ8npEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pVwoRMnpEeORSaKKF58-hQ" comments="_pViloMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVilocnpEeORSaKKF58-hQ" name="generateTarget">
+      <modelElement href="Countdown.uml#_mwo_8MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwoRcnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwoRsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwo_8cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoR8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pVwoSMnpEeORSaKKF58-hQ" name="playGame">
+      <modelElement href="Countdown.uml#_mwo_8snpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoScnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwpnAcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoSsnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwpnAsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoS8npEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pVwoTMnpEeORSaKKF58-hQ" name="numberOfPlayers">
+        <modelElement href="Countdown.uml#_mwpnAMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoTcnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwoTsnpEeORSaKKF58-hQ" comments="_pVjMsMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVjzwMnpEeORSaKKF58-hQ" name="declareWinner">
+      <modelElement href="Countdown.uml#_mwqOEMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwoT8npEeORSaKKF58-hQ" label="-"/>
+      <parameters xmi:id="_pVwoUMnpEeORSaKKF58-hQ" name="score1">
+        <modelElement href="Countdown.uml#_mwqOEcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoUcnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwoUsnpEeORSaKKF58-hQ" name="score2">
+        <modelElement href="Countdown.uml#_mwqOEsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoU8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwoVMnpEeORSaKKF58-hQ" comments="_pVka0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pVka0cnpEeORSaKKF58-hQ" name="submitInitialAnswer">
+      <modelElement href="Countdown.uml#_mwq1IMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwoVcnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pVwoVsnpEeORSaKKF58-hQ" name="numberOfPlayers">
+        <modelElement href="Countdown.uml#_mwq1IcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoV8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwoWMnpEeORSaKKF58-hQ" name="checkSolution">
+      <modelElement href="Countdown.uml#_mwrcMMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoWcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwrcM8npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoWsnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwsDQMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoW8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pVwoXMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwrcMsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoXcnpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwoXsnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mwrcMcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoX8npEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwoYMnpEeORSaKKF58-hQ" name="scoreSolution">
+      <modelElement href="Countdown.uml#_mwsDQsnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoYcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwsqUcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoYsnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwsqUsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoY8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pVwoZMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwsqUMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoZcnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwoZsnpEeORSaKKF58-hQ" name="playerSolution">
+        <modelElement href="Countdown.uml#_mwsDQ8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoZ8npEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwoaMnpEeORSaKKF58-hQ" name="revealSolution">
+      <modelElement href="Countdown.uml#_mwtRYMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwoacnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mwtRYcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pVwoasnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mwtRYsnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwoa8npEeORSaKKF58-hQ" label="+"/>
+    </operations>
+    <operations xmi:id="_pVwobMnpEeORSaKKF58-hQ" comments="_pVlo8MnpEeORSaKKF58-hQ" targetConnectionVisual="_pVmQAMnpEeORSaKKF58-hQ" name="performCalculation">
+      <modelElement href="Countdown.uml#_mwufgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwobcnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwobsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mwufhMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwob8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwocMnpEeORSaKKF58-hQ" name="int1">
+        <modelElement href="Countdown.uml#_mwufgcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoccnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwocsnpEeORSaKKF58-hQ" name="int2">
+        <modelElement href="Countdown.uml#_mwufgsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoc8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwodMnpEeORSaKKF58-hQ" name="op">
+        <modelElement href="Countdown.uml#_mwufg8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwodcnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwodsnpEeORSaKKF58-hQ" comments="_pVm3EMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVm3EcnpEeORSaKKF58-hQ" name="NumbersRound">
+      <modelElement href="Countdown.uml#_mzdqcMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pVwod8npEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pVwoeMnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pVwoecnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzeRhMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoesnpEeORSaKKF58-hQ" name="NumbersRound">
+          <modelElement href="Countdown.uml#_mwkugMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwoe8npEeORSaKKF58-hQ" name="in">
+        <modelElement href="Countdown.uml#_mzdqccnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwofMnpEeORSaKKF58-hQ" name="Scanner">
+          <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwofcnpEeORSaKKF58-hQ" name="timer">
+        <modelElement href="Countdown.uml#_mzeRgMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwofsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwof8npEeORSaKKF58-hQ" name="players">
+        <modelElement href="Countdown.uml#_mzeRgcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwogMnpEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwogcnpEeORSaKKF58-hQ" comments="_pVneIMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVneIcnpEeORSaKKF58-hQ" name="getSubList">
+      <modelElement href="Countdown.uml#_mzffoMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pVwogsnpEeORSaKKF58-hQ" name="Generics">
+        <modelElement href="Countdown.uml#_mzgGsMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pVwog8npEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwohMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzgGscnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwohcnpEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwohsnpEeORSaKKF58-hQ" name="list">
+        <modelElement href="Countdown.uml#_mzffocnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoh8npEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwoiMnpEeORSaKKF58-hQ" name="temp">
+        <modelElement href="Countdown.uml#_mzffosnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoicnpEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwoisnpEeORSaKKF58-hQ" name="index">
+        <modelElement href="Countdown.uml#_mzffo8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoi8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pVwojMnpEeORSaKKF58-hQ" comments="_pVoFMMnpEeORSaKKF58-hQ" targetConnectionVisual="_pVoFMcnpEeORSaKKF58-hQ" name="searchSolution">
+      <modelElement href="Countdown.uml#_mzjKAMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pVwojcnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pVwojsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzjKBMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwoj8npEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pVwokMnpEeORSaKKF58-hQ" name="numbers">
+        <modelElement href="Countdown.uml#_mzjKAcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwokcnpEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwoksnpEeORSaKKF58-hQ" name="progress_so_far">
+        <modelElement href="Countdown.uml#_mzjKAsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwok8npEeORSaKKF58-hQ" name="ArrayList">
+          <modelElement href="Countdown.uml#_mysOYMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pVwolMnpEeORSaKKF58-hQ" name="target_num">
+        <modelElement href="Countdown.uml#_mzjKA8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pVwolcnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pXH6AMnpEeORSaKKF58-hQ" comments="_pWXFAMnpEeORSaKKF58-hQ" targetConnectionVisual="_pWuRYMnpEeORSaKKF58-hQ" name="Player" associationsIn="_pQNZsMnpEeORSaKKF58-hQ _pXfGYMnpEeORSaKKF58-hQ" associationsOut="_pW0YAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pXH6AcnpEeORSaKKF58-hQ" position="2000.0,70.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pXH6AsnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pXH6A8npEeORSaKKF58-hQ" name="name">
+      <modelElement href="Countdown.uml#_m0NRUMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pXH6BMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0N4YMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pXH6BcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pXH6BsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pXH6B8npEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pXH6CMnpEeORSaKKF58-hQ" name="score">
+      <modelElement href="Countdown.uml#_m0OfcMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pXH6CcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0OfccnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pXH6CsnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pXH6C8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pXH6DMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pXH6DcnpEeORSaKKF58-hQ" name="in">
+      <modelElement href="Countdown.uml#_m0PGgMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pXH6DsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0PGgcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pXHS88npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0PGgcnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pXH6D8npEeORSaKKF58-hQ" label="-"/>
+      <cardinality xmi:id="_pXH6EMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pXH6EcnpEeORSaKKF58-hQ" name="Scanner">
+        <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pXH6EsnpEeORSaKKF58-hQ" comments="_pW8T0MnpEeORSaKKF58-hQ" targetConnectionVisual="_pW9h8MnpEeORSaKKF58-hQ" name="setName">
+      <modelElement href="Countdown.uml#_mw2bUMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pXH6E8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pXH6FMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mw2bUsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6FcnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pXH6FsnpEeORSaKKF58-hQ" name="player">
+        <modelElement href="Countdown.uml#_mw2bUcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6F8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pXH6GMnpEeORSaKKF58-hQ" comments="_pXBzYMnpEeORSaKKF58-hQ" targetConnectionVisual="_pXDokMnpEeORSaKKF58-hQ" name="updateScore">
+      <modelElement href="Countdown.uml#_mw2bU8npEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pXH6GcnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pXH6GsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mw3CYcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6G8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pXH6HMnpEeORSaKKF58-hQ" name="score">
+        <modelElement href="Countdown.uml#_mw3CYMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6HcnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pXH6HsnpEeORSaKKF58-hQ" comments="_pXFdwMnpEeORSaKKF58-hQ" targetConnectionVisual="_pXFdwcnpEeORSaKKF58-hQ" name="Player">
+      <modelElement href="Countdown.uml#_mzmNUMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pXH6H8npEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pXH6IMnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pXH6IcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzm0Y8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6IsnpEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pXH6I8npEeORSaKKF58-hQ" name="in">
+        <modelElement href="Countdown.uml#_mzmNUcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6JMnpEeORSaKKF58-hQ" name="Scanner">
+          <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pXH6JcnpEeORSaKKF58-hQ" name="player">
+        <modelElement href="Countdown.uml#_mzm0YMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pXH6JsnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pbMhsMnpEeORSaKKF58-hQ" comments="_pZTrUMnpEeORSaKKF58-hQ" targetConnectionVisual="_pZq3sMnpEeORSaKKF58-hQ" name="Round" abstractClass="true" associationsOut="_pXfGYMnpEeORSaKKF58-hQ _paFucsnpEeORSaKKF58-hQ" subclassedBy="_pZyzgMnpEeORSaKKF58-hQ _pZ2d4MnpEeORSaKKF58-hQ _pZ4TEMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_mw4QgMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pbMhscnpEeORSaKKF58-hQ" position="765.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pbMhssnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pbMhs8npEeORSaKKF58-hQ" name="players">
+      <modelElement href="Countdown.uml#_m0QUoMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pbMhtMnpEeORSaKKF58-hQ" name="Array">
+        <modelElement href="Countdown.uml#_m0Q7scnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pbMhtcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0RiwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pbKFdMnpEeORSaKKF58-hQ" name="Array">
+        <modelElement href="Countdown.uml#_m0Q7scnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pbKFdcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0RiwMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pbMhtsnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbMht8npEeORSaKKF58-hQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_pbMhuMnpEeORSaKKF58-hQ" name="Player">
+        <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pbMhucnpEeORSaKKF58-hQ" name="playerSolutions">
+      <modelElement href="Countdown.uml#_m0RiwcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pbMhusnpEeORSaKKF58-hQ" name="Array">
+        <modelElement href="Countdown.uml#_m0Riw8npEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pbMhu8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0SJ0MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pbMhvMnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbMhvcnpEeORSaKKF58-hQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_pbMhvsnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pbMhv8npEeORSaKKF58-hQ" name="scanner">
+      <modelElement href="Countdown.uml#_m0Sw4MnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pbMhwMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0TX8MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pbL6osnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0TX8MnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pbMhwcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbMhwsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pbMhw8npEeORSaKKF58-hQ" name="Scanner">
+        <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pbMhxMnpEeORSaKKF58-hQ" name="timer">
+      <modelElement href="Countdown.uml#_m0TX8cnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pbMhxcnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0T_AMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pbMhxsnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pbMhx8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pbMhyMnpEeORSaKKF58-hQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pbMhycnpEeORSaKKF58-hQ" comments="_paPfcMnpEeORSaKKF58-hQ" targetConnectionVisual="_paQtkMnpEeORSaKKF58-hQ" name="setTimer">
+      <modelElement href="Countdown.uml#_mw6FsMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMhysnpEeORSaKKF58-hQ" label="-"/>
+      <outParameters xmi:id="_pbMhy8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mw6FscnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMhzMnpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pbMhzcnpEeORSaKKF58-hQ" comments="_paUX8MnpEeORSaKKF58-hQ" targetConnectionVisual="_paWNIMnpEeORSaKKF58-hQ" name="submitSolution">
+      <modelElement href="Countdown.uml#_mw6swMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMhzsnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pbMhz8npEeORSaKKF58-hQ" name="solution1">
+        <modelElement href="Countdown.uml#_mw6swcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh0MnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pbMh0cnpEeORSaKKF58-hQ" name="solution2">
+        <modelElement href="Countdown.uml#_mw6swsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh0snpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pbMh08npEeORSaKKF58-hQ" comments="_pacTwMnpEeORSaKKF58-hQ" targetConnectionVisual="_pacTwcnpEeORSaKKF58-hQ" abstractOperation="true" name="playGame">
+      <modelElement href="Countdown.uml#_mw7T0MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMh1MnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pbMh1cnpEeORSaKKF58-hQ" name="numberOfPlayers">
+        <modelElement href="Countdown.uml#_mw7T0cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh1snpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pbMh18npEeORSaKKF58-hQ" comments="_pac60MnpEeORSaKKF58-hQ" targetConnectionVisual="_pac60cnpEeORSaKKF58-hQ" abstractOperation="true" name="checkSolution">
+      <modelElement href="Countdown.uml#_mw764MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMh2MnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pbMh2cnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mw764snpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh2snpEeORSaKKF58-hQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pbMh28npEeORSaKKF58-hQ" name="answer">
+        <modelElement href="Countdown.uml#_mw764cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh3MnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pbMh3cnpEeORSaKKF58-hQ" comments="_padh4MnpEeORSaKKF58-hQ" targetConnectionVisual="_padh4cnpEeORSaKKF58-hQ" abstractOperation="true" name="scoreSolution">
+      <modelElement href="Countdown.uml#_mw8h8MnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMh3snpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pbMh38npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mw8h8snpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh4MnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pbMh4cnpEeORSaKKF58-hQ" name="answer">
+        <modelElement href="Countdown.uml#_mw8h8cnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh4snpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pbMh48npEeORSaKKF58-hQ" comments="_paeI8MnpEeORSaKKF58-hQ" targetConnectionVisual="_paeI8cnpEeORSaKKF58-hQ" abstractOperation="true" name="revealSolution">
+      <modelElement href="Countdown.uml#_mw8h88npEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pbMh5MnpEeORSaKKF58-hQ" label="+"/>
+    </operations>
+    <operations xmi:id="_pbMh5cnpEeORSaKKF58-hQ" comments="_paewAMnpEeORSaKKF58-hQ" targetConnectionVisual="_paewAcnpEeORSaKKF58-hQ" name="Round">
+      <modelElement href="Countdown.uml#_mzoCgMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pbMh5snpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pbMh58npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pbMh6MnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzopkMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh6cnpEeORSaKKF58-hQ" name="Round">
+          <modelElement href="Countdown.uml#_mw4QgMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pbMh6snpEeORSaKKF58-hQ" name="in">
+        <modelElement href="Countdown.uml#_mzoCgcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh68npEeORSaKKF58-hQ" name="Scanner">
+          <modelElement href="Countdown.uml#_myuDkcnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pbMh7MnpEeORSaKKF58-hQ" name="timer">
+        <modelElement href="Countdown.uml#_mzoCgsnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh7cnpEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pbMh7snpEeORSaKKF58-hQ" name="players">
+        <modelElement href="Countdown.uml#_mzoCg8npEeORSaKKF58-hQ"/>
+        <type xmi:id="_pbMh78npEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pcrIYMnpEeORSaKKF58-hQ" comments="_pcLZIMnpEeORSaKKF58-hQ" targetConnectionVisual="_pchXYMnpEeORSaKKF58-hQ" name="Score">
+    <modelElement href="Countdown.uml#_mw_lQMnpEeORSaKKF58-hQ"/>
+    <visualProperties xmi:id="_pcrIYcnpEeORSaKKF58-hQ" position="20.0,1194.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pcrIYsnpEeORSaKKF58-hQ" label="+"/>
+    <attributes xmi:id="_pcrIY8npEeORSaKKF58-hQ" name="name">
+      <modelElement href="Countdown.uml#_m0V0MMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pcrIZMnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0WbQMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pcrIZcnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pcrIZsnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pcrIZ8npEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pcrIaMnpEeORSaKKF58-hQ" name="score">
+      <modelElement href="Countdown.uml#_m0WbQcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pcrIacnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0XCUMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pcrIasnpEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pcrIa8npEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pcrIbMnpEeORSaKKF58-hQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pcrIbcnpEeORSaKKF58-hQ" name="date">
+      <modelElement href="Countdown.uml#_m0XCUcnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pcrIbsnpEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_m0XpYMnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pcrIb8npEeORSaKKF58-hQ" label="+"/>
+      <cardinality xmi:id="_pcrIcMnpEeORSaKKF58-hQ" label="1" max="1" min="1"/>
+      <type xmi:id="_pcrIccnpEeORSaKKF58-hQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pcrIcsnpEeORSaKKF58-hQ" name="Score">
+      <modelElement href="Countdown.uml#_mxBacMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pcrIc8npEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pcrIdMnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pcrIdcnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mxBadMnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIdsnpEeORSaKKF58-hQ" name="Score">
+          <modelElement href="Countdown.uml#_mw_lQMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pcrId8npEeORSaKKF58-hQ" name="line">
+        <modelElement href="Countdown.uml#_mxBaccnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIeMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pcrIecnpEeORSaKKF58-hQ" name="toString">
+      <modelElement href="Countdown.uml#_mxCBgMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pcrIesnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pcrIe8npEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mxCBgcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIfMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pcrIfcnpEeORSaKKF58-hQ" name="saveScore">
+      <modelElement href="Countdown.uml#_mxCokMnpEeORSaKKF58-hQ"/>
+      <visibility xmi:id="_pcrIfsnpEeORSaKKF58-hQ" label="+"/>
+      <parameters xmi:id="_pcrIf8npEeORSaKKF58-hQ" name="filename">
+        <modelElement href="Countdown.uml#_mxCokcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIgMnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pcrIgcnpEeORSaKKF58-hQ" name="Score">
+      <modelElement href="Countdown.uml#_mzMksMnpEeORSaKKF58-hQ"/>
+      <keywords xmi:id="_pcrIgsnpEeORSaKKF58-hQ" keyword="create"/>
+      <visibility xmi:id="_pcrIg8npEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pcrIhMnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzMktcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIhcnpEeORSaKKF58-hQ" name="Score">
+          <modelElement href="Countdown.uml#_mw_lQMnpEeORSaKKF58-hQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pcrIhsnpEeORSaKKF58-hQ" name="player">
+        <modelElement href="Countdown.uml#_mzMkscnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIh8npEeORSaKKF58-hQ" name="Player">
+          <modelElement href="Countdown.uml#_mw0mIMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pcrIiMnpEeORSaKKF58-hQ" name="time">
+        <modelElement href="Countdown.uml#_mzMkssnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIicnpEeORSaKKF58-hQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pcrIisnpEeORSaKKF58-hQ" name="compareTo">
+      <modelElement href="Countdown.uml#_mzNLwMnpEeORSaKKF58-hQ"/>
+      <stereotypes xmi:id="_pcrIi8npEeORSaKKF58-hQ" name="LegacyStyledElement">
+        <modelElement href="Countdown.uml#_mzNy0cnpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pcrIjMnpEeORSaKKF58-hQ" name="Annotations">
+        <modelElement href="Countdown.uml#_mzNy0snpEeORSaKKF58-hQ"/>
+      </stereotypes>
+      <visibility xmi:id="_pcrIjcnpEeORSaKKF58-hQ" label="+"/>
+      <outParameters xmi:id="_pcrIjsnpEeORSaKKF58-hQ">
+        <modelElement href="Countdown.uml#_mzNy0MnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIj8npEeORSaKKF58-hQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pcrIkMnpEeORSaKKF58-hQ" name="compare">
+        <modelElement href="Countdown.uml#_mzNLwcnpEeORSaKKF58-hQ"/>
+        <type xmi:id="_pcrIkcnpEeORSaKKF58-hQ" name="Score">
+          <modelElement href="Countdown.uml#_mw_lQMnpEeORSaKKF58-hQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_0_HQ0MnpEeORSaKKF58-hQ" sourceConnectionVisual="_0_H34MnpEeORSaKKF58-hQ" text="An implementation of Countdown's Number round, in which the players&#xA;are given 30 seconds to calculate a target number given 6 randomly &#xA;chosen numbers.&#xA;@author Aidan O'Grady, Kristine Semjonova&#xA; *" item="_pVwBAMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_0_C_YMnpEeORSaKKF58-hQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_70LrMMnpEeORSaKKF58-hQ" sourceConnectionVisual="_70jeoMnpEeORSaKKF58-hQ" text="An implementation of Countdown's Number round, in which the players&#xA;are given 30 seconds to get the best word from 9 randomly chosen&#xA;letters.&#xA;@author Aidan O'Grady, Kristine Semjonova&#xA; *" item="_pUdnkMnpEeORSaKKF58-hQ">
+    <modelElement href="Countdown.uml#_70JO8MnpEeORSaKKF58-hQ"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
