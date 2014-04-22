@@ -244,8 +244,10 @@ public class Countdown {
 		String date = dateFormat.format(new Date());
 		
 		for(Player p:players){
-			Score score = new Score(p, date); //Creates score object.
-			score.saveScore("files/highscore"); //Saves the score.
+			if(p.score > 0){
+				Score score = new Score(p, date); //Creates score object.
+				score.saveScore("files/highscore"); //Saves the score.
+			}
 			System.out.println(p.name + ": Your score was " + p.score + ".\n"); //Displays score.
 
 		}
