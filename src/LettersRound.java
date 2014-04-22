@@ -151,10 +151,10 @@ public class LettersRound extends Round{
 	 * @param answer2 Player two's answer.
 	 */
 	private void declareWinner(String answer1, String answer2){
-		if(answer1.length() > answer2.length()){
+		if(scoreSolution(answer1) > scoreSolution(answer2)){
 			System.out.println(players[0].name + " scores " + scoreSolution(answer1) + " points.");
 			players[0].updateScore(scoreSolution(answer1));
-		} else if(answer1.length() < answer2.length()){
+		} else if(scoreSolution(answer1) < scoreSolution(answer2)){
 			System.out.println(players[1].name + " scores " + scoreSolution(answer2) + " points.");
 			players[1].updateScore(scoreSolution(answer2));
 		} else{
