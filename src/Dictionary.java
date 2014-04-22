@@ -15,7 +15,7 @@ public class Dictionary {
 	/**
 	 * The location of the dictionary to be used.
 	 */
-	private String filename;
+	public String filename;
 	/**
 	 * An ArrayList of every word in the dictionary. Probably not that efficient.
 	 */

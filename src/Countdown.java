@@ -151,7 +151,7 @@ public class Countdown {
 		System.out.println("Please choose one of the following\n"
 				+ "\t1) Start new game.\n"
 				+ "\t2) Load game.\n"
-				+ "\t3) Return.\n");
+				+ "\t3) Return.");
 		try {
 			int input = scanner.nextInt();
 			scanner.nextLine();
@@ -259,7 +259,7 @@ public class Countdown {
 		lineBreak();
 		System.out.println("Please select an action.\n"
 				+ "\t1) Next Round.\n" + "\t2) Save game.\n"
-				+ "\t3) Quit.\n");
+				+ "\t3) Quit.");
 		try {
 			int input = scanner.nextInt();
 			scanner.nextLine();
@@ -347,7 +347,7 @@ public class Countdown {
 			System.out.println("Which round would you like to play?\n"
 					+ "\t1) Play a letters round.\n"
 					+ "\t2) Play a numbers round.\n"
-					+ "\t3) Play a conundrum round.\n" + "\t4) Return.\n");
+					+ "\t3) Play a conundrum round.\n" + "\t4) Return.");
 			try {
 				int input = scanner.nextInt();
 				scanner.nextLine();

@@ -277,7 +277,7 @@ public class LettersRound extends Round{
 	public void revealSolution() {
 		ArrayList<String> list = new ArrayList<String>();
 		try{
-			FileReader fr = new FileReader("files/dictionary.txt");
+			FileReader fr = new FileReader(dictionary.filename);
 			BufferedReader br = new BufferedReader(fr);
 			String line = br.readLine();
 			int length = 0;
